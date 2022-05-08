@@ -208,13 +208,17 @@ SWEP.AttachmentElements = {
                 vpos = Vector(0, -2.9, .18),
                 vang = Angle(0, 90, 0),
             }
-        }
+        },
+        NameChange = "CP93",
+        TrueNameChange = "USPCT",
     },
     ["uc_usp_slide_match"] = {
         VMBodygroups = {
             {ind = 0,bg = 2},
             {ind = 3,bg = 1},
-        }
+        },
+        NameChange = "P93 Match",
+        TrueNameChange = "USP Match",
     },
     ["uc_usp_mag_20"] = {
         VMBodygroups = {
@@ -420,6 +424,10 @@ SWEP.Hook_Think = ArcCW.UC.ADSReload
 
 -- Attachments --
 
+SWEP.RejectAttachments = {
+    --["uc_tp_gong"] = true
+}
+
 SWEP.Attachments = {
     {
         PrintName = "Optic",
@@ -502,7 +510,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Training Package",
-        Slot = "uc_tp",
+        Slot = {"uc_tp","uc_usp_tp"},
         DefaultAttName = "Basic Training"
     },
     {
@@ -514,9 +522,9 @@ SWEP.Attachments = {
         PrintName = "Charm",
         Slot = {"charm","fml_charm"},
         FreeSlot = true,
-        Bone = "vm_pivot",
+        Bone = "vm_charge",
         Offset = {
-            vpos = Vector(0.65, -4.1, 8.5),
+            vpos = Vector(0.42, -0.1, 5),
             vang = Angle(90, 0, -100),
         },
         VMScale = Vector(.6,.6,.6),

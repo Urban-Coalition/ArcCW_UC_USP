@@ -6,7 +6,7 @@ if GetConVar("arccw_truenames"):GetBool() then
 end
 
 att.Icon = Material("entities/att/acwatt_ud_glock_slide_subcompact.png", "smooth mips")
-att.Description = "Competition slide with a large barrel weight affixed to the end. This counterweight reduces recoil significantly, but leaves little room for further customization.\n\nAlso a popular choice among free men."
+att.Description = "Competition slide with a large barrel weight affixed to the end. This counterweight reduces recoil significantly, but leaves little room for further customization.\n\nA popular choice for free men."
 att.Desc_Cons = {
     "uc.nomuzzle",
     "uc.noubs"
