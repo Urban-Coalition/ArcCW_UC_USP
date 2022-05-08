@@ -23,11 +23,11 @@ SWEP.ShootPitch = 100
 
 -- Fake name --
 
-SWEP.PrintName = "P93-45"
+SWEP.PrintName = "P93"
 
 -- True name --
 
-SWEP.TrueName = "USP45"
+SWEP.TrueName = "USP"
 
 -- Trivia --
 
@@ -192,7 +192,38 @@ SWEP.BulletBones = {
 SWEP.DefaultBodygroups = "000000000"
 
 SWEP.AttachmentElements = {
-
+    ["pistol_rail"] = {
+        VMBodygroups = {
+            {ind = 4,bg = 1},
+        }
+        -- todo: pistol rail
+    },
+    ["uc_usp_slide_compact"] = {
+        VMBodygroups = {
+            {ind = 0,bg = 1},
+            {ind = 1,bg = 1},
+        },
+        AttPosMods = {
+            [4] = {
+                vpos = Vector(0, -2.9, .18),
+                vang = Angle(0, 90, 0),
+            }
+        }
+    },
+    ["uc_usp_slide_match"] = {
+        VMBodygroups = {
+            {ind = 0,bg = 2},
+            {ind = 3,bg = 1},
+        }
+    },
+    ["uc_usp_mag_20"] = {
+        VMBodygroups = {
+            {ind = 2,bg = 1},
+        }
+    },
+    ["uc_usp_skin_nickel"] = {
+        VMSkin = 1
+    }
 }
 
 SWEP.Hook_NameChange = function(wep,name)
@@ -399,13 +430,13 @@ SWEP.Attachments = {
             vpos = Vector(-0.01, -.7, .5),
             vang = Angle(90, 0, -90),
         },
-        
+        InstalledEles = {"pistol_rail"},
     },
     {
-        PrintName = "Barrel",
-        Slot = {"uc_usp_barrel"},
+        PrintName = "Slide",
+        Slot = {"uc_usp_slide"},
         DefaultAttIcon = Material("entities/att/acwatt_ur_deagle_barrel.png","mips smooth"),
-        DefaultAttName = "5\" Tactical Barrel",
+        DefaultAttName = "5\" Tactical Slide",
     },
     {
         PrintName = "Caliber",
@@ -428,8 +459,7 @@ SWEP.Attachments = {
             vpos = Vector(0, -3.6, .18),
             vang = Angle(0, 90, 0),
         },
-        InstalledEles = {"nofh"},
-        ExcludeFlags = {"barrel_annihilator"},
+        ExcludeFlags = {"usp_match"},
         VMScale = Vector(.8, .8, .8)
     },
     {
@@ -441,6 +471,7 @@ SWEP.Attachments = {
             vpos = Vector(0, -.25, 3.75),
             vang = Angle(90, 0, -90),
         },
+        ExcludeFlags = {"usp_match"},
     },
     {
         PrintName = "Magazine",
@@ -490,11 +521,11 @@ SWEP.Attachments = {
         },
         VMScale = Vector(.6,.6,.6),
     },
-    --[[{
+    {
         PrintName = "Finish",
-        Slot = {"ur_deagle_skin"},
-        DefaultAttName = "Stainless Steel",
+        Slot = {"uc_usp_skin"},
+        DefaultAttName = "Black",
         DefaultAttIcon = Material("entities/att/acwatt_ur_deagle_finish_default.png","mips smooth"),
         FreeSlot = true,
-    },]]
+    },
 }
