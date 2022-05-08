@@ -435,7 +435,7 @@ SWEP.Attachments = {
         DefaultAttName = "Iron Sights",
         Bone = "vm_charge",
         Offset = {
-            vpos = Vector(-0.01, -.7, .5),
+            vpos = Vector(-0.01, -.7, 0),
             vang = Angle(90, 0, -90),
         },
         InstalledEles = {"pistol_rail"},
