@@ -176,6 +176,7 @@ SWEP.WorldModelOffset = {
 -- Weapon sounds --
 
 local path = ")^weapons/arccw_uc_usp/"
+local path1 = ")^weapons/arccw_ur/1911/"
 local common = ")^/arccw_uc/common/"
 local rottle = {common .. "cloth_2.ogg", common .. "cloth_3.ogg", common .. "cloth_4.ogg", common .. "cloth_6.ogg", common .. "rattle.ogg"}
 SWEP.ShootSound = {path .. "fire-01.ogg", path .. "fire-02.ogg", path .. "fire-03.ogg", path .. "fire-04.ogg", path .. "fire-05.ogg", path .. "fire-06.ogg"} -- Maybe Not Placeholder
@@ -288,7 +289,7 @@ SWEP.Animations = {
         Source = "idle",
         ProcDraw = true,
         SoundTable = {
-            {s = path .. "draw.ogg", t = 0}, -- Not Temporary
+            {s = path1 .. "draw.ogg", t = 0}, -- Not Temporary
             --{s = common .. "raise.ogg", t = 0.05},
         },
     },
@@ -296,7 +297,7 @@ SWEP.Animations = {
         Source = "idle_empty",
         ProcDraw = true,
         SoundTable = {
-            {s = path .. "draw.ogg", t = 0}, -- Not Temporary
+            {s = path1 .. "draw.ogg", t = 0}, -- Not Temporary
             --{s = common .. "raise.ogg", t = 0.05},
         },
     },
@@ -304,7 +305,7 @@ SWEP.Animations = {
         Source = "idle",
         SoundTable = {
             {s = common .. "cloth_2.ogg", t = 0},
-            {s = path .. "holster.ogg", t = 0.2}, -- Not Temporary
+            {s = path1 .. "holster.ogg", t = 0.2}, -- Not Temporary
         },
     },]]
 
@@ -318,7 +319,7 @@ SWEP.Animations = {
         Source = "fire_empty",
         Time = 24 / 30,
         ShellEjectAt = 0,
-        SoundTable = {{ s = path .. "mech_last.ogg", t = 0 }},
+        SoundTable = {{ s = path1 .. "mech_last.ogg", t = 0 }},
     },
 
     -- 12-R Reloads --
@@ -337,12 +338,12 @@ SWEP.Animations = {
         SoundTable = {
             { s = rottle, t = 0 / 60, c = ca },
             { s = common .. "magpouch_pull_small.ogg", t = 0 / 60, c = ca },
-            { s = common .. "magrelease.ogg", t = 10 / 60, c = ca },
-            { s = path .. "magout1.ogg", t = 24 / 60, c = ca },
+            { s = common .. "magrelease.ogg", t = 17 / 60, c = ca },
+            { s = path .. "magout.ogg", t = 26 / 60, c = ca },
             { s = rottle, t = 10 / 60, c = ca },
             { s = rottle, t = 55 / 60, c = ca },
             { s = common ..  "magpouch_replace_small.ogg", t = 80 / 60, c = ca },
-            { s = path .. "magin1.ogg", t = 40 / 60, c = ca },
+            { s = path .. "magin.ogg", t = 50 / 60, c = ca },
         },
     },
     ["reload_empty"] = {
@@ -359,14 +360,14 @@ SWEP.Animations = {
         SoundTable = {
             { s = rottle, t = 0 / 60, c = ca },
             { s = common .. "magrelease.ogg", t = 7 / 60, c = ca },
-            { s = path .. "magout1.ogg", t = 16 / 60, c = ca },
+            { s = path .. "magout.ogg", t = 16 / 60, c = ca },
             { s = rottle, t = 10 / 60, c = ca },
             { s = common .. "magpouch_pull_small.ogg", t = 29 / 60, c = ca },
             { s = common .. "pistol_magdrop.ogg", t = 40 / 60, c = ca },
             { s = rottle, t = 55 / 60, c = ca },
-            { s = path .. "magin1.ogg", t = 60 / 60, c = ca },
+            { s = path .. "magin.ogg", t = 64 / 60, c = ca },
             { s = rottle, t = 90 / 60, c = ca },
-            { s = path .. "slidedrop1.ogg", t = 94 / 60, c = ca },
+            { s = path .. "slidedrop.ogg", t = 94 / 60, c = ca },
         },
     },
 
@@ -398,10 +399,10 @@ SWEP.Animations = {
         -- SoundTable = {
         --     { s = rottle, t = 0 / 60, c = ca },
         --     { s = common .. "magrelease.ogg", t = 7 / 60, c = ca },
-        --     { s = path .. "magout1.ogg", t = 8 / 60, c = ca },
+        --     { s = path .. "magout.ogg", t = 8 / 60, c = ca },
         --     { s = rottle, t = 100 / 60, c = ca },
         --     { s = path .. "magin_miss.ogg", t = 106 / 60, c = ca },
-        --     { s = path .. "magin1.ogg", t = 114 / 60, c = ca },
+        --     { s = path .. "magin.ogg", t = 114 / 60, c = ca },
         --     { s = path .. "rack1.ogg", t = 155 / 60, c = ca },
         --     { s = rottle, t = 160 / 60, c = ca },
         --     { s = path .. "rack2.ogg", t = 178 / 60, c = ca },
@@ -434,10 +435,10 @@ SWEP.Animations = {
         -- SoundTable = {
         --     { s = rottle, t = 0 / 60, c = ca },
         --     { s = common .. "magrelease.ogg", t = 7 / 60, c = ca },
-        --     { s = path .. "magout1.ogg", t = 8 / 60, c = ca },
+        --     { s = path .. "magout.ogg", t = 8 / 60, c = ca },
         --     { s = rottle, t = 100 / 60, c = ca },
         --     { s = path .. "magin_miss.ogg", t = 106 / 60, c = ca },
-        --     { s = path .. "magin1.ogg", t = 114 / 60, c = ca },
+        --     { s = path .. "magin.ogg", t = 114 / 60, c = ca },
         --     { s = rottle, t = 160 / 60, c = ca },
         -- },
     },
