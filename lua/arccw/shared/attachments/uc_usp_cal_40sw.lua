@@ -29,7 +29,8 @@ att.Mult_Recoil = 0.85
 att.Mult_RecoilSide = 0.75
 
 
-att.Mult_ClipSize = 13 / 12
+--att.Mult_ClipSize = 13 / 12
+att.Add_ClipSize = 1
 att.Override_ShellModel = "models/weapons/arccw/uc_shells/9x19.mdl"
 att.Override_ShellScale = 1
 
