@@ -212,21 +212,47 @@ SWEP.AttachmentElements = {
         NameChange = "CP93",
         TrueNameChange = "USPCT",
     },
+    ["uc_usp_slide_ext"] = {
+        VMBodygroups = {
+            {ind = 0,bg = 3},
+        },
+        AttPosMods = {
+            [4] = {
+                vpos = Vector(0, -4.8, .18),
+                vang = Angle(0, 90, 0),
+            }
+        },
+        NameChange = "LP93",
+        TrueNameChange = "USP Elite",
+    },
     ["uc_usp_slide_match"] = {
         VMBodygroups = {
-            {ind = 0,bg = 2},
+            {ind = 1,bg = 2},
             {ind = 3,bg = 1},
         },
         NameChange = "P93 Match",
         TrueNameChange = "USP Match",
     },
-    ["uc_usp_mag_20"] = {
+    ["uc_usp_slide_cs"] = {
+        VMBodygroups = {
+            {ind = 1,bg = 3},
+        },
+        NameChange = "K&M .45",
+        TrueNameChange = "USP CS",
+    },
+    ["uc_usp_mag_ext"] = {
         VMBodygroups = {
             {ind = 2,bg = 1},
         }
     },
     ["uc_usp_skin_nickel"] = {
         VMSkin = 1
+    },
+    ["uc_usp_skin_blued"] = {
+        VMSkin = 2,
+        VMBodygroups = {
+            --{ind = 1,bg = 3},
+        },
     }
 }
 
@@ -295,7 +321,7 @@ SWEP.Animations = {
         SoundTable = {{ s = path .. "mech_last.ogg", t = 0 }},
     },
 
-    -- 7-R Reloads --
+    -- 12-R Reloads --
 
     ["reload"] = {
         Source = "reload",
