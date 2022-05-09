@@ -175,7 +175,8 @@ SWEP.WorldModelOffset = {
 
 -- Weapon sounds --
 
-local path = ")^weapons/arccw_ur/1911/"
+local path = ")^weapons/arccw_uc_usp/"
+local path1 = ")^weapons/arccw_ur/1911/"
 local common = ")^/arccw_uc/common/"
 local rottle = {common .. "cloth_2.ogg", common .. "cloth_3.ogg", common .. "cloth_4.ogg", common .. "cloth_6.ogg", common .. "rattle.ogg"}
 SWEP.ShootSound = {path .. "fire-01.ogg", path .. "fire-02.ogg", path .. "fire-03.ogg", path .. "fire-04.ogg", path .. "fire-05.ogg", path .. "fire-06.ogg"} -- Maybe Not Placeholder
@@ -288,7 +289,7 @@ SWEP.Animations = {
         Source = "idle",
         ProcDraw = true,
         SoundTable = {
-            {s = path .. "draw.ogg", t = 0}, -- Not Temporary
+            {s = path1 .. "draw.ogg", t = 0}, -- Not Temporary
             --{s = common .. "raise.ogg", t = 0.05},
         },
     },
@@ -296,7 +297,7 @@ SWEP.Animations = {
         Source = "idle_empty",
         ProcDraw = true,
         SoundTable = {
-            {s = path .. "draw.ogg", t = 0}, -- Not Temporary
+            {s = path1 .. "draw.ogg", t = 0}, -- Not Temporary
             --{s = common .. "raise.ogg", t = 0.05},
         },
     },
@@ -304,7 +305,7 @@ SWEP.Animations = {
         Source = "idle",
         SoundTable = {
             {s = common .. "cloth_2.ogg", t = 0},
-            {s = path .. "holster.ogg", t = 0.2}, -- Not Temporary
+            {s = path1 .. "holster.ogg", t = 0.2}, -- Not Temporary
         },
     },]]
 
@@ -318,7 +319,7 @@ SWEP.Animations = {
         Source = "fire_empty",
         Time = 24 / 30,
         ShellEjectAt = 0,
-        SoundTable = {{ s = path .. "mech_last.ogg", t = 0 }},
+        SoundTable = {{ s = path1 .. "mech_last.ogg", t = 0 }},
     },
 
     -- 12-R Reloads --
