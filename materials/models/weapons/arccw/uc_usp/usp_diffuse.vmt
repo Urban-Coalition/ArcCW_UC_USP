@@ -21,4 +21,6 @@
 	"$rimlightexponent" 		"25"	
 	"$rimlightboost"			"0.8"
 	"$rimmask" 					"1"
+
+	$color2				"[2 2 2]"
 }
