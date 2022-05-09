@@ -8,6 +8,7 @@ $bodygroup "barrel" {
 	studio "barrel_default.smd"
 	studio "barrel_compact.smd"
 	studio "barrel_match.smd"
+	studio "barrel_cs.smd"
 } 
 $bodygroup "magazine" {
 	studio "mag_12.smd"
@@ -33,11 +34,12 @@ $texturegroup "skinfamilies"
 {
     { "usp_diffuse"        }
  	{ "usp_silver_diffuse" }
+	{ "usp_cs_diffuse" }
 }
 
 
 $attachment "1" "vm_barrel" 0 0 0 rotate 0 90 -90  //taken from ak qc (its wbtwr too)
-$attachment "2" "vm_pivot" 0 0 0 rotate 0 90 -90
+$attachment "2" "vm_pivot" 0.00 0.9 0.90 rotate 0 140 180
 $attachment "5" "camera" 0 0 0 rotate -90 0 0
  
 $surfaceprop "default"
