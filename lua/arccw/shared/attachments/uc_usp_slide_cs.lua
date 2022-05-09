@@ -6,7 +6,7 @@ if GetConVar("arccw_truenames"):GetBool() then
 end
 
 att.Icon = Material("entities/att/acwatt_ud_glock_slide_subcompact.png", "smooth mips")
-att.Description = "International contract slide with an ejection port on the left.\nComplicated technology makes it more precise when a suppressor is threaded onto the barrel, and allows the bullet to exert more force into brain tissue."
+att.Description = "International contract slide with an ejection port on the left.\nComplicated technology makes it more precise when a suppressor is threaded onto the barrel, and allows the bullet to exert more force into brain tissue.\nThe extensive additions weigh down the bolt, increasing the time required to cycle."
 att.Desc_Pros = {
     "uc.usp.cs.1",
     "uc.usp.cs.2"

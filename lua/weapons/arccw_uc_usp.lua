@@ -239,7 +239,7 @@ SWEP.AttachmentElements = {
             {ind = 1,bg = 3},
         },
         NameChange = "K&M .45",
-        TrueNameChange = "USP CS",
+        TrueNameChange = "USP Agency",
     },
     ["uc_usp_mag_ext"] = {
         VMBodygroups = {
