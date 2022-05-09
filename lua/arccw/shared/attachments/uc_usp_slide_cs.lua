@@ -2,7 +2,7 @@ att.PrintName = "5\" K&M .45 Op. CS Slide"
 att.AbbrevName = "5\" Op. CS Slide"
 
 if GetConVar("arccw_truenames"):GetBool() then
-    att.PrintName = "6\" USP Op. CS Slide"
+    att.PrintName = "5\" USP Op. CS Slide"
 end
 
 att.Icon = Material("entities/att/acwatt_ud_glock_slide_subcompact.png", "smooth mips")
