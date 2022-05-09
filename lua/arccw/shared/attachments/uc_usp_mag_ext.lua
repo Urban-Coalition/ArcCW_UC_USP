@@ -1,8 +1,8 @@
-att.PrintName = "USP 17-Round Extended Mag"
+att.PrintName = "USP 17-Round Magazine Extension"
 att.AbbrevName = "17-Round Extended Mag"
 
 if !GetConVar("arccw_truenames"):GetBool() then
-    att.PrintName = "P93 17-Round Extended Mag"
+    att.PrintName = "P93 17-Round Magazine Extension"
 end
 
 att.SortOrder = 33
