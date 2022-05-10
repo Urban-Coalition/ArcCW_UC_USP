@@ -27,7 +27,7 @@ SWEP.PrintName = "P93"
 
 -- True name --
 
-SWEP.TrueName = "USP"
+SWEP.TrueName = "USP Tactical"
 
 -- Trivia --
 
