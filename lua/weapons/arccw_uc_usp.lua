@@ -371,6 +371,53 @@ SWEP.Animations = {
         },
     },
 
+ -- Jam Animations --
+
+
+
+    ["fix"] = {
+        Source = "fix",
+        time = 40 / 30,
+        LHIK = true,
+        LHIKIn = 0.3,
+        LHIKOut = 0,
+       // SoundTable = {
+        // },
+    },
+
+    ["fix_empty"] = {
+        Source = "fix_empty",
+        time = 40 / 30,
+        LHIK = true,
+        LHIKIn = 0.3,
+        LHIKOut = 0,
+       // SoundTable = {
+        // },
+    },
+
+    ["idle_jam"] = {
+        Source = "idle_jam",
+        // time = 35 / 60,
+        LHIK = true,
+        LHIKIn = 0.3,
+        LHIKOut = 0,
+       // SoundTable = {
+        // },
+    },
+
+    ["fire_jam"] = {
+        Source = "fire_jam",
+        // time = 35 / 60,
+        LHIK = true,
+        LHIKIn = 0.3,
+        LHIKOut = 0,
+       // SoundTable = {
+        // },
+    },
+
+
+
+
     -- -- Inspecc --
 
     ["enter_inspect"] = {
