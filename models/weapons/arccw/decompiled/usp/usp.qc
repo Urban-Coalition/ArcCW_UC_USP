@@ -76,6 +76,16 @@ $sequence "idle_empty"{
 	node "Ready"
 }
 
+$sequence "idle_jam"{
+	"anims\vm_m1911_idle_jam.smd" 
+	fps 30
+	"ACT_VM_IDLE" 1
+ 	blend "sights" 0 1
+	loop
+	snap
+	node "Ready"
+}
+
 $sequence "fire" {
 	"anims\vm_m1911_fire.smd"
 	"anims\vm_m1911_fire_ads.smd"
@@ -127,7 +137,7 @@ $sequence "reload_empty" {
 
 
 $sequence "reload_ext" {
-	"anims\vm_m1911_reload_tactical_xmags.smd"
+	"anims\vm_m1911_reload_tactical_ext.smd"
 	// "anims\reload_iron.smd"
 	// blend "sights" 0 1
 	fps 30
@@ -136,7 +146,7 @@ $sequence "reload_ext" {
 }
 
 $sequence "reload_empty_ext" {
-	"anims\vm_m1911_reload_empty_xmags.smd"
+	"anims\vm_m1911_reload_empty_ext.smd"
 	// "anims\reload_empty_iron.smd"
 	// blend "sights" 0 1
 	fps 30
@@ -193,6 +203,24 @@ $sequence "exit_inspect_empty" {
 	fadein 0.2
 	fadeout 0
 	fps 32
+}
+
+$sequence "fix" {
+	"anims\vm_m1911_fix.smd"
+	"ACT_VM_IDLE" 1
+	frame 0 30
+	fadein 0
+	fadeout 0.2
+	fps 30
+}
+
+$sequence "fix_empty" {
+	"anims\vm_m1911_fix_empty.smd"
+	"ACT_VM_IDLE" 1
+	frame 0 30
+	fadein 0
+	fadeout 0.2
+	fps 30
 }
 
 // $include "wbtrfix2.qci"            idk how to make it work
