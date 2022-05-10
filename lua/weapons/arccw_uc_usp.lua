@@ -32,7 +32,7 @@ SWEP.TrueName = "USP Tactical"
 -- Trivia --
 
 SWEP.Trivia_Class = "Pistol"
-SWEP.Trivia_Desc = [[Versatile handgun designed for foreign and domestic law enforcement. It discards the ambitions of the P7 pattern for a more conventional form which has proved popular.
+SWEP.Trivia_Desc = [[Versatile handgun designed for foreign and domestic law enforcement. It discards the ambitions of the P7 pattern for a more conventional form which has proved popular. This "Tactical" variant has a threaded barrel designed for sound suppressors.
 
 Can be chambered for a variety of calibers, allowing its trademark performance to be fine-tuned for a number of roles.]]
 SWEP.Trivia_Manufacturer = "Crowdley & Nelson"
