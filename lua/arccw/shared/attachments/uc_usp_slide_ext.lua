@@ -1,8 +1,8 @@
-att.PrintName = "6\" USP Elite Slide"
-att.AbbrevName = "6\" Elite Slide"
+att.PrintName = "6\" LP93 Slide"
+att.AbbrevName = "6\" Long Slide"
 
 if GetConVar("arccw_truenames"):GetBool() then
-    att.PrintName = "6\" LP93 Slide"
+    att.PrintName = "6\" USP Elite Slide"
 end
 
 att.Icon = Material("entities/att/acwatt_ud_glock_slide_lb.png", "smooth mips")
