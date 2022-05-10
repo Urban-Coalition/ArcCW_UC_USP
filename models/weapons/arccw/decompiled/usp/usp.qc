@@ -9,6 +9,7 @@ $bodygroup "barrel" {
 	studio "barrel_compact.smd"
 	studio "barrel_match.smd"
 	studio "barrel_cs.smd"
+	studio "barrel_long.smd"
 } 
 $bodygroup "magazine" {
 	studio "mag_12.smd"
