@@ -24,5 +24,5 @@ att.Mult_Sway = 1.5
 att.Mult_ShootSpeedMult = 0.95
 
 att.Hook_SelectReloadAnimation = function(wep, anim)
-    --return anim .. "_20" -- Disabled until proper anims are made
+    return anim .. "_ext"
 end

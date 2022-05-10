@@ -73,6 +73,14 @@ SWEP.PhysBulletMuzzleVelocity = 315
 
 SWEP.BodyDamageMults = ArcCW.UC.BodyDamageMults
 
+-- Jamming --
+
+--SWEP.Malfunction = true
+SWEP.MalfunctionJam = true
+--SWEP.MalfunctionMean = 21
+SWEP.MalfunctionPostFire = true
+SWEP.MalfunctionTakeRound = false
+
 -- Mag size --
 
 SWEP.ChamberSize = 1
@@ -215,7 +223,7 @@ SWEP.AttachmentElements = {
     },
     ["uc_usp_slide_ext"] = {
         VMBodygroups = {
-            {ind = 0,bg = 3},
+            {ind = 1,bg = 4},
         },
         AttPosMods = {
             [4] = {
@@ -272,19 +280,24 @@ SWEP.Animations = {
         Source = "idle",
         Time = 10 / 30,
     },
-    -- ["ready"] = {
-    --     Source = "vm_m1911_inspect",
-    --     Time = 200 / 60,
-    --     LHIK = true,
-    --     LHIKIn = 0,
-    --     LHIKEaseOut = 0.3,
-    --     LHIKOut = 0.6,
-    --     --[[SoundTable = {
-    --         { s = rottle, t = 0 / 60, c = ca },
-    --         { s = path .. "rack1.ogg", t = 10 / 60, c = ca },
-    --         { s = path .. "rack2.ogg", t = 25 / 60, c = ca },
-    --     },]]
-    -- },
+    ["idle_jammed"] = {
+        Source = "idle_jam",
+        Time = 10 / 30,
+    },
+    ["ready"] = {
+        Source = "fix",
+        Time = 1.6,
+        MinProgress = 1.2,
+        LHIK = true,
+        LHIKIn = 0.3,
+        LHIKOut = 0,
+        ShellEjectAt = false,
+        SoundTable = {
+            { s = rottle, t = 0 / 60, c = ca },
+            { s = path .. "slidepull.ogg",t = 28 / 60},
+            { s = path .. "slidedrop1.ogg",t = 35 / 60},
+        },
+    },
     ["draw"] = {
         Source = "idle",
         ProcDraw = true,
@@ -320,6 +333,15 @@ SWEP.Animations = {
         Time = 24 / 30,
         ShellEjectAt = 0,
         SoundTable = {{ s = path1 .. "mech_last.ogg", t = 0 }},
+    },
+    ["fire_jammed"] = {
+        Source = "fire_jam",
+        Time = 30 / 30,
+        MinProgress = 0.5,
+        ShellEjectAt = false,
+        SoundTable = {
+            --{ s = {path .. "mech-01.ogg", path .. "mech-02.ogg", path .. "mech-03.ogg", path .. "mech-04.ogg", path .. "mech-05.ogg", path .. "mech-06.ogg"}, t = 0 }
+        },
     },
 
     -- 12-R Reloads --
@@ -371,28 +393,84 @@ SWEP.Animations = {
         },
     },
 
+    -- 17-R Reloads --
+
+    ["reload_ext"] = {
+        Source = "reload_ext",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
+        MinProgress = 1.3525,
+        Time = 65 / 30,
+        LastClip1OutTime = 0.9,
+        LHIK = true,
+        LHIKIn = 0.2,
+        LHIKEaseIn = 0.2,
+        LHIKEaseOut = 0.2,
+        LHIKOut = 0.62,
+        SoundTable = {
+            { s = rottle, t = 0 / 60, c = ca },
+            { s = common .. "magpouch_pull_small.ogg", t = 0 / 60, c = ca },
+            { s = common .. "magrelease.ogg", t = 10 / 60, c = ca },
+            { s = path .. "magout1.ogg", t = 26 / 60, c = ca },
+            { s = rottle, t = 10 / 60, c = ca },
+            { s = rottle, t = 55 / 60, c = ca },
+            { s = common ..  "magpouch_replace_small.ogg", t = 80 / 60, c = ca },
+            { s = path .. "magin1.ogg", t = 42 / 60, c = ca },
+        },
+    },
+    ["reload_empty_ext"] = {
+        Source = "reload_empty_ext",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
+        MinProgress = 1.75,
+        Time = 75 / 30,
+        LastClip1OutTime = 0.76,
+        LHIK = true,
+        LHIKIn = 0.1,
+        LHIKEaseIn = 0.1,
+        LHIKEaseOut = 0.55,
+        LHIKOut = 0.7,
+        SoundTable = {
+            { s = rottle, t = 0 / 60, c = ca },
+            { s = common .. "magrelease.ogg", t = 7 / 60, c = ca },
+            { s = path .. "magout1.ogg", t = 16 / 60, c = ca },
+            { s = rottle, t = 10 / 60, c = ca },
+            { s = common .. "magpouch_pull_small.ogg", t = 29 / 60, c = ca },
+            { s = common .. "pistol_magdrop.ogg", t = 40 / 60, c = ca },
+            { s = rottle, t = 55 / 60, c = ca },
+            { s = path .. "magin1.ogg", t = 64 / 60, c = ca },
+            { s = rottle, t = 90 / 60, c = ca },
+            { s = path .. "slidedrop1.ogg", t = 94 / 60, c = ca },
+        },
+    },
+
  -- Jam Animations --
 
 
 
     ["fix"] = {
         Source = "fix",
-        time = 40 / 30,
+        --Time = 40 / 30,
         LHIK = true,
         LHIKIn = 0.3,
         LHIKOut = 0,
-       // SoundTable = {
-        // },
+        ShellEjectAt = 30 / 60,
+        SoundTable = {
+            { s = rottle, t = 0 / 60, c = ca },
+            { s = path .. "slidepull.ogg",t = 28 / 60},
+            { s = path .. "slidedrop1.ogg",t = 35 / 60},
+        },
     },
 
     ["fix_empty"] = {
         Source = "fix_empty",
-        time = 40 / 30,
+        --Time = 40 / 30,
         LHIK = true,
         LHIKIn = 0.3,
         LHIKOut = 0,
-       // SoundTable = {
-        // },
+        ShellEjectAt = 30 / 60,
+        SoundTable = {
+            { s = rottle, t = 0 / 60, c = ca },
+            { s = path .. "slidepull.ogg",t = 28 / 60},
+        },
     },
 
     ["idle_jam"] = {
