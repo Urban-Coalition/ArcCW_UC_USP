@@ -338,12 +338,12 @@ SWEP.Animations = {
         SoundTable = {
             { s = rottle, t = 0 / 60, c = ca },
             { s = common .. "magpouch_pull_small.ogg", t = 0 / 60, c = ca },
-            { s = common .. "magrelease.ogg", t = 17 / 60, c = ca },
+            { s = common .. "magrelease.ogg", t = 10 / 60, c = ca },
             { s = path .. "magout1.ogg", t = 26 / 60, c = ca },
             { s = rottle, t = 10 / 60, c = ca },
             { s = rottle, t = 55 / 60, c = ca },
             { s = common ..  "magpouch_replace_small.ogg", t = 80 / 60, c = ca },
-            { s = path .. "magin1.ogg", t = 50 / 60, c = ca },
+            { s = path .. "magin1.ogg", t = 42 / 60, c = ca },
         },
     },
     ["reload_empty"] = {
