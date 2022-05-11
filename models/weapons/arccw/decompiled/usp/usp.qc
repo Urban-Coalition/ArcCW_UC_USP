@@ -119,14 +119,41 @@ $sequence "fire_jam" {
 	{ event 5001 0 "1" }
 }
 
-// $sequence "ready" {
-// 	"anims\ready.smd"
-// 	"anims\ready_iron.smd"
-//  	blend "sights" 0 1
-// 	fps 60
-// 	"ACT_VM_DRAW" 1
-// 	snap
-// }
+$sequence "draw" "anims\vm_m1911_draw.smd" {
+	fps 30
+	"ACT_VM_DRAW" 1
+	snap
+}
+
+$sequence "draw_empty" "anims\vm_m1911_draw_empty.smd" {
+	fps 30
+	"ACT_VM_DRAW" 1
+	snap
+}
+
+$sequence "draw_jam" "anims\vm_m1911_draw_jam.smd" {
+	fps 30
+	"ACT_VM_DRAW" 1
+	snap
+}
+
+$sequence "holster" "anims\vm_m1911_holster.smd" {
+	fps 30
+	"ACT_VM_DRAW" 1
+	snap
+}
+
+$sequence "holster_empty" "anims\vm_m1911_holster_empty.smd" {
+	fps 30
+	"ACT_VM_DRAW" 1
+	snap
+}
+
+$sequence "holster_jam" "anims\vm_m1911_holster_jam.smd" {
+	fps 30
+	"ACT_VM_DRAW" 1
+	snap
+}
 
 $sequence "reload" {
 	"anims\vm_m1911_reload_tactical.smd"
