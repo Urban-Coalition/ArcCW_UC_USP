@@ -20,7 +20,7 @@ att.AutoStats = true
 
 att.Mult_DrawTime = 1.15
 att.Mult_HolsterTime = 1.15
-att.Add_BarrelLength = 4
+att.Add_BarrelLength = 2
 
 att.Mult_Sway = 1.25
 att.Mult_HipDispersion = 1.15
