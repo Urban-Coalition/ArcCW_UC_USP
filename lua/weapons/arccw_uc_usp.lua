@@ -299,28 +299,47 @@ SWEP.Animations = {
         },
     },
     ["draw"] = {
-        Source = "idle",
-        ProcDraw = true,
+        Source = "draw",
         SoundTable = {
             {s = path1 .. "draw.ogg", t = 0}, -- Not Temporary
             --{s = common .. "raise.ogg", t = 0.05},
         },
     },
     ["draw_empty"] = {
-        Source = "idle_empty",
-        ProcDraw = true,
+        Source = "draw_empty",
         SoundTable = {
             {s = path1 .. "draw.ogg", t = 0}, -- Not Temporary
             --{s = common .. "raise.ogg", t = 0.05},
         },
     },
-    --[[["holster"] = {
-        Source = "idle",
+    ["draw_jam"] = {
+        Source = "draw_jam",
+        SoundTable = {
+            {s = path1 .. "draw.ogg", t = 0}, -- Not Temporary
+            --{s = common .. "raise.ogg", t = 0.05},
+        },
+    },
+    ["holster"] = {
+        Source = "holster",
         SoundTable = {
             {s = common .. "cloth_2.ogg", t = 0},
             {s = path1 .. "holster.ogg", t = 0.2}, -- Not Temporary
         },
-    },]]
+    },
+    ["holster_empty"] = {
+        Source = "holster_empty",
+        SoundTable = {
+            {s = common .. "cloth_2.ogg", t = 0},
+            {s = path1 .. "holster.ogg", t = 0.2}, -- Not Temporary
+        },
+    },
+    ["holster_jam"] = {
+        Source = "holster_jam",
+        SoundTable = {
+            {s = common .. "cloth_2.ogg", t = 0},
+            {s = path1 .. "holster.ogg", t = 0.2}, -- Not Temporary
+        },
+    },
 
     ["fire"] = {
         Source = "fire",
@@ -444,8 +463,6 @@ SWEP.Animations = {
 
  -- Jam Animations --
 
-
-
     ["fix"] = {
         Source = "fix",
         --Time = 40 / 30,
@@ -552,6 +569,40 @@ SWEP.Animations = {
     },
     ["exit_inspect_empty"] = {
         Source = "exit_inspect_empty",
+        time = 66 / 60,
+        LHIK = true,
+        LHIKIn = 0,
+        LHIKEaseOut = 0.3,
+        LHIKOut = 0.84,
+        -- SoundTable = {
+        --     { s = rottle, t = 0 / 60, c = ca },
+        --     { s = common .. "magrelease.ogg", t = 7 / 60, c = ca },
+        --     { s = path .. "magout1.ogg", t = 8 / 60, c = ca },
+        --     { s = rottle, t = 100 / 60, c = ca },
+        --     { s = path .. "magin_miss.ogg", t = 106 / 60, c = ca },
+        --     { s = path .. "magin1.ogg", t = 114 / 60, c = ca },
+        --     { s = rottle, t = 160 / 60, c = ca },
+        -- },
+    },
+
+    ["enter_inspect_jam"] = {
+        Source = "enter_inspect_jam",
+        time = 35 / 60,
+        LHIK = true,
+        LHIKIn = 0.1,
+        LHIKOut = 0,
+        SoundTable = {
+        },
+    },
+    ["idle_inspect_jam"] = {
+        Source = "idle_inspect_jam",
+        time = 72 / 60,
+        LHIK = true,
+        LHIKIn = 0,
+        LHIKOut = 0,
+    },
+    ["exit_inspect_empty"] = {
+        Source = "exit_inspect_jam",
         time = 66 / 60,
         LHIK = true,
         LHIKIn = 0,
