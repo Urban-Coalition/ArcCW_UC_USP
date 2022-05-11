@@ -190,6 +190,31 @@ $sequence "exit_inspect" {
 	fps 32
 }
 
+$sequence "enter_inspect_jam" {
+	"anims\vm_m1911_inspect_jam.smd"
+	"ACT_VM_IDLE" 1
+	frame 0 30
+	fadein 0
+	fadeout 0.2
+	fps 32
+}
+
+$sequence "idle_inspect_jam" {
+	"anims\vm_m1911_inspect_jam.smd"
+	"ACT_VM_IDLE" 1
+	frame 30 30
+	fps 30
+}
+
+$sequence "exit_inspect_jam" {
+	"anims\vm_m1911_inspect_jam.smd"
+	"ACT_VM_IDLE" 1
+	frame 31 120
+	fadein 0.2
+	fadeout 0
+	fps 32
+}
+
 $sequence "enter_inspect_empty" {
 	"anims\vm_m1911_inspect_empty.smd"
 	"ACT_VM_IDLE" 1
