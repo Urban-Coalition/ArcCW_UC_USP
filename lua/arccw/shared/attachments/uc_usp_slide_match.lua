@@ -1,8 +1,8 @@
-att.PrintName = "6\" P93 Match Slide"
-att.AbbrevName = "6\" Match Slide"
+att.PrintName = "7\" P93 Match Slide"
+att.AbbrevName = "7\" Match Slide"
 
 if GetConVar("arccw_truenames"):GetBool() then
-    att.PrintName = "6\" USP Match Slide"
+    att.PrintName = "7\" USP Match Slide"
 end
 
 att.Icon = Material("entities/att/acwatt_ud_glock_slide_subcompact.png", "smooth mips")
@@ -19,6 +19,6 @@ att.Slot = "uc_usp_slide"
 att.Mult_Recoil = .7
 
 att.Mult_SightTime = 1.4
-att.Add_BarrelLength = 2
+att.Add_BarrelLength = 4
 
 att.GivesFlags = {"usp_match"}

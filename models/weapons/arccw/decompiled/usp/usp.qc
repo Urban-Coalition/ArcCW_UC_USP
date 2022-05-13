@@ -9,6 +9,7 @@ $bodygroup "barrel" {
 	studio "barrel_compact.smd"
 	studio "barrel_match.smd"
 	studio "barrel_cs.smd"
+	studio "barrel_long.smd"
 } 
 $bodygroup "magazine" {
 	studio "mag_12.smd"
@@ -76,6 +77,16 @@ $sequence "idle_empty"{
 	node "Ready"
 }
 
+$sequence "idle_jam"{
+	"anims\vm_m1911_idle_jam.smd" 
+	fps 30
+	"ACT_VM_IDLE" 1
+ 	blend "sights" 0 1
+	loop
+	snap
+	node "Ready"
+}
+
 $sequence "fire" {
 	"anims\vm_m1911_fire.smd"
 	"anims\vm_m1911_fire_ads.smd"
@@ -98,14 +109,51 @@ $sequence "fire_empty" {
 	{ event 5001 0 "1" }
 }
 
-// $sequence "ready" {
-// 	"anims\ready.smd"
-// 	"anims\ready_iron.smd"
-//  	blend "sights" 0 1
-// 	fps 60
-// 	"ACT_VM_DRAW" 1
-// 	snap
-// }
+$sequence "fire_jam" {
+	"anims\vm_m1911_fire_jam.smd"
+	fps 30
+	"ACT_VM_PRIMARYATTACK" 1
+ 	blend "sights" 0 1
+	fadein 0.02
+	fadeout 0.0
+	{ event 5001 0 "1" }
+}
+
+$sequence "draw" "anims\vm_m1911_draw.smd" {
+	fps 30
+	"ACT_VM_DRAW" 1
+	snap
+}
+
+$sequence "draw_empty" "anims\vm_m1911_draw_empty.smd" {
+	fps 30
+	"ACT_VM_DRAW" 1
+	snap
+}
+
+$sequence "draw_jam" "anims\vm_m1911_draw_jam.smd" {
+	fps 30
+	"ACT_VM_DRAW" 1
+	snap
+}
+
+$sequence "holster" "anims\vm_m1911_holster.smd" {
+	fps 30
+	"ACT_VM_DRAW" 1
+	snap
+}
+
+$sequence "holster_empty" "anims\vm_m1911_holster_empty.smd" {
+	fps 30
+	"ACT_VM_DRAW" 1
+	snap
+}
+
+$sequence "holster_jam" "anims\vm_m1911_holster_jam.smd" {
+	fps 30
+	"ACT_VM_DRAW" 1
+	snap
+}
 
 $sequence "reload" {
 	"anims\vm_m1911_reload_tactical.smd"
@@ -127,7 +175,7 @@ $sequence "reload_empty" {
 
 
 $sequence "reload_ext" {
-	"anims\vm_m1911_reload_tactical_xmags.smd"
+	"anims\vm_m1911_reload_tactical_ext.smd"
 	// "anims\reload_iron.smd"
 	// blend "sights" 0 1
 	fps 30
@@ -136,7 +184,7 @@ $sequence "reload_ext" {
 }
 
 $sequence "reload_empty_ext" {
-	"anims\vm_m1911_reload_empty_xmags.smd"
+	"anims\vm_m1911_reload_empty_ext.smd"
 	// "anims\reload_empty_iron.smd"
 	// blend "sights" 0 1
 	fps 30
@@ -169,6 +217,31 @@ $sequence "exit_inspect" {
 	fps 32
 }
 
+$sequence "enter_inspect_jam" {
+	"anims\vm_m1911_inspect_jam.smd"
+	"ACT_VM_IDLE" 1
+	frame 0 30
+	fadein 0
+	fadeout 0.2
+	fps 32
+}
+
+$sequence "idle_inspect_jam" {
+	"anims\vm_m1911_inspect_jam.smd"
+	"ACT_VM_IDLE" 1
+	frame 30 30
+	fps 30
+}
+
+$sequence "exit_inspect_jam" {
+	"anims\vm_m1911_inspect_jam.smd"
+	"ACT_VM_IDLE" 1
+	frame 31 120
+	fadein 0.2
+	fadeout 0
+	fps 32
+}
+
 $sequence "enter_inspect_empty" {
 	"anims\vm_m1911_inspect_empty.smd"
 	"ACT_VM_IDLE" 1
@@ -193,6 +266,22 @@ $sequence "exit_inspect_empty" {
 	fadein 0.2
 	fadeout 0
 	fps 32
+}
+
+$sequence "fix" {
+	"anims\vm_m1911_fix.smd"
+	"ACT_VM_IDLE" 1
+	fadein 0
+	fadeout 0.2
+	fps 30
+}
+
+$sequence "fix_empty" {
+	"anims\vm_m1911_fix_empty.smd"
+	"ACT_VM_IDLE" 1
+	fadein 0
+	fadeout 0.2
+	fps 30
 }
 
 // $include "wbtrfix2.qci"            idk how to make it work
