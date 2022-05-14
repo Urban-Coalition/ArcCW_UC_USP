@@ -20,8 +20,13 @@
 
 	"$rimlight" 	"1"
 	"$rimlightexponent" 	"66"	
-	"$rimlightboost"	"0.6"
+	"$rimlightboost"	"0.1"
 	"$rimmask" 	"1"
 
 	$color2 "[1 1 1]"
+	
+	"$detail"                   "models\weapons\arccw\uc_usp\usp_glow"
+	"$detailframe"              "1"
+	"$detailblendmode"          "5"
+	"$detailscale"              "1"
 }
