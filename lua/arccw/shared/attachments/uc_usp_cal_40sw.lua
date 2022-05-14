@@ -6,7 +6,7 @@ if !GetConVar("arccw_truenames"):GetBool() then
 end
 
 att.SortOrder = 8
-att.Icon = Material("entities/att/acwatt_ud_glock_caliber.png", "smooth mips")
+att.Icon = Material("entities/att/acwatt_uc_usp_bullets_40s&w.png", "smooth mips")
 att.Description = "Stubby caliber which the USP was designed around. Retains damage over distance better than other calibers."
 att.Desc_Pros = {
 }
@@ -49,3 +49,6 @@ att.Hook_GetDistantShootSound = function(wep, distancesound)
         return { "weapons/arccw_ud/glock/fire_dist_40.ogg" }
     end
 end
+
+att.GivesFlags = {"cal_subsonic"}
+att.ExcludeFlags = {"powder_subsonic"}
