@@ -302,6 +302,8 @@ SWEP.Animations = {
     },
     ["draw"] = {
         Source = "draw",
+        Time = .75,
+        MinProgress = .4,
         SoundTable = {
             {s = path .. "draw.ogg", t = 0}, -- Not Temporary
             --{s = common .. "raise.ogg", t = 0.05},
@@ -309,6 +311,8 @@ SWEP.Animations = {
     },
     ["draw_empty"] = {
         Source = "draw_empty",
+        Time = .75,
+        MinProgress = .4,
         SoundTable = {
             {s = path .. "draw.ogg", t = 0}, -- Not Temporary
             --{s = common .. "raise.ogg", t = 0.05},
@@ -316,6 +320,8 @@ SWEP.Animations = {
     },
     ["draw_jam"] = {
         Source = "draw_jam",
+        Time = .75,
+        MinProgress = .4,
         SoundTable = {
             {s = path .. "draw.ogg", t = 0}, -- Not Temporary
             --{s = common .. "raise.ogg", t = 0.05},
@@ -323,7 +329,7 @@ SWEP.Animations = {
     },
     ["holster"] = {
         Source = "holster",
-        Time = 22 / 30,
+        Time = 18 / 30,
         SoundTable = {
             {s = common .. "cloth_2.ogg", t = 0},
             {s = path .. "holster.ogg", t = 0.2}, -- Not Temporary
@@ -331,7 +337,7 @@ SWEP.Animations = {
     },
     ["holster_empty"] = {
         Source = "holster_empty",
-        Time = 22 / 30,
+        Time = 18 / 30,
         SoundTable = {
             {s = common .. "cloth_2.ogg", t = 0},
             {s = path .. "holster.ogg", t = 0.2}, -- Not Temporary
@@ -339,7 +345,7 @@ SWEP.Animations = {
     },
     ["holster_jam"] = {
         Source = "holster_jam",
-        Time = 22 / 30,
+        Time = 18 / 30,
         SoundTable = {
             {s = common .. "cloth_2.ogg", t = 0},
             {s = path .. "holster.ogg", t = 0.2}, -- Not Temporary
