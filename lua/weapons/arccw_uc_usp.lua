@@ -295,7 +295,7 @@ SWEP.Animations = {
         ProcDraw = true,
         SoundTable = {
             { s = rottle, t = 0 / 60, c = ca },
-            {s = path1 .. "draw.ogg", t = 0},
+            {s = path .. "draw.ogg", t = 0},
             { s = path .. "slidepull.ogg",t = 28 / 60},
             { s = path .. "slidedrop1.ogg",t = 35 / 60},
         },
@@ -303,21 +303,21 @@ SWEP.Animations = {
     ["draw"] = {
         Source = "draw",
         SoundTable = {
-            {s = path1 .. "draw.ogg", t = 0}, -- Not Temporary
+            {s = path .. "draw.ogg", t = 0}, -- Not Temporary
             --{s = common .. "raise.ogg", t = 0.05},
         },
     },
     ["draw_empty"] = {
         Source = "draw_empty",
         SoundTable = {
-            {s = path1 .. "draw.ogg", t = 0}, -- Not Temporary
+            {s = path .. "draw.ogg", t = 0}, -- Not Temporary
             --{s = common .. "raise.ogg", t = 0.05},
         },
     },
     ["draw_jam"] = {
         Source = "draw_jam",
         SoundTable = {
-            {s = path1 .. "draw.ogg", t = 0}, -- Not Temporary
+            {s = path .. "draw.ogg", t = 0}, -- Not Temporary
             --{s = common .. "raise.ogg", t = 0.05},
         },
     },
@@ -326,7 +326,7 @@ SWEP.Animations = {
         Time = 22/30,
         SoundTable = {
             {s = common .. "cloth_2.ogg", t = 0},
-            {s = path1 .. "holster.ogg", t = 0.2}, -- Not Temporary
+            {s = path .. "holster.ogg", t = 0.2}, -- Not Temporary
         },
     },
     ["holster_empty"] = {
@@ -334,7 +334,7 @@ SWEP.Animations = {
         Time = 22/30,
         SoundTable = {
             {s = common .. "cloth_2.ogg", t = 0},
-            {s = path1 .. "holster.ogg", t = 0.2}, -- Not Temporary
+            {s = path .. "holster.ogg", t = 0.2}, -- Not Temporary
         },
     },
     ["holster_jam"] = {
@@ -342,7 +342,7 @@ SWEP.Animations = {
         Time = 22/30,
         SoundTable = {
             {s = common .. "cloth_2.ogg", t = 0},
-            {s = path1 .. "holster.ogg", t = 0.2}, -- Not Temporary
+            {s = path .. "holster.ogg", t = 0.2}, -- Not Temporary
         },
     },
 
@@ -356,7 +356,7 @@ SWEP.Animations = {
         Source = "fire_empty",
         Time = 24 / 30,
         ShellEjectAt = 0,
-        SoundTable = {{ s = path1 .. "mech_last.ogg", t = 0 }},
+        SoundTable = {{ s = path .. "mech_last.ogg", t = 0 }},
     },
     ["fire_jammed"] = {
         Source = "fire_jam",
