@@ -292,8 +292,10 @@ SWEP.Animations = {
         LHIKIn = 0.3,
         LHIKOut = 0,
         ShellEjectAt = false,
+        ProcDraw = true,
         SoundTable = {
             { s = rottle, t = 0 / 60, c = ca },
+            {s = path1 .. "draw.ogg", t = 0},
             { s = path .. "slidepull.ogg",t = 28 / 60},
             { s = path .. "slidedrop1.ogg",t = 35 / 60},
         },
@@ -649,7 +651,7 @@ SWEP.Attachments = {
     {
         PrintName = "Slide",
         Slot = {"uc_usp_slide"},
-        DefaultAttIcon = Material("entities/att/acwatt_ur_deagle_barrel.png","mips smooth"),
+        DefaultAttIcon = Material("entities/att/acwatt_uc_usp_slide_default.png","mips smooth"),
         DefaultAttName = "5\" Tactical Slide",
     },
     {
@@ -690,7 +692,7 @@ SWEP.Attachments = {
     {
         PrintName = "Magazine",
         Slot = {"uc_usp_mag"},
-        DefaultAttIcon = Material("entities/att/acwatt_ur_deagle_mag_7.png","mips smooth"),
+        DefaultAttIcon = Material("entities/att/acwatt_uc_usp_mag_default.png","mips smooth"),
         DefaultAttName = "12-Round Mag",
     },
     {

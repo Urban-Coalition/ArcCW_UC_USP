@@ -5,7 +5,7 @@ if GetConVar("arccw_truenames"):GetBool() then
     att.PrintName = "7\" USP Match Slide"
 end
 
-att.Icon = Material("entities/att/acwatt_ud_glock_slide_subcompact.png", "smooth mips")
+att.Icon = Material("entities/att/acwatt_uc_usp_slide_match.png", "smooth mips")
 att.Description = "Competition slide with a large barrel weight affixed to the end. This counterweight reduces recoil significantly, but leaves little room for further customization.\n\nA popular choice for free men."
 att.Desc_Cons = {
     "uc.nomuzzle",

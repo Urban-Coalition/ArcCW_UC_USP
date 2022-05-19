@@ -5,7 +5,7 @@ if GetConVar("arccw_truenames"):GetBool() then
     att.PrintName = "6\" USP Elite Slide"
 end
 
-att.Icon = Material("entities/att/acwatt_ud_glock_slide_lb.png", "smooth mips")
+att.Icon = Material("entities/att/acwatt_uc_usp_slide_long.png", "smooth mips")
 att.Description = "A somewhat uncommon long polymer slide.\nThe longer barrel improves precision but is awkward to handle."
 att.Desc_Pros = {
 }

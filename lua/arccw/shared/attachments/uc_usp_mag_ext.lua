@@ -6,7 +6,7 @@ if !GetConVar("arccw_truenames"):GetBool() then
 end
 
 att.SortOrder = 33
-att.Icon = Material("entities/att/acwatt_ud_glock_mag_33.png", "smooth mips")
+att.Icon = Material("entities/att/acwatt_uc_usp_mag_extended.png", "smooth mips")
 att.Description = "Aftermarket magazine extension with a thickened base for improved ergonomics. Heavier and throws off weapon balance, but does allow you to fire for longer."
 att.Desc_Pros = {}
 att.Desc_Cons = {}
