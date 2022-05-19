@@ -266,7 +266,7 @@ SWEP.AttachmentElements = {
 }
 
 SWEP.Hook_NameChange = function(wep,name)
-    
+
 end
 
 -- Animations --
@@ -323,7 +323,7 @@ SWEP.Animations = {
     },
     ["holster"] = {
         Source = "holster",
-        Time = 22/30,
+        Time = 22 / 30,
         SoundTable = {
             {s = common .. "cloth_2.ogg", t = 0},
             {s = path .. "holster.ogg", t = 0.2}, -- Not Temporary
@@ -331,7 +331,7 @@ SWEP.Animations = {
     },
     ["holster_empty"] = {
         Source = "holster_empty",
-        Time = 22/30,
+        Time = 22 / 30,
         SoundTable = {
             {s = common .. "cloth_2.ogg", t = 0},
             {s = path .. "holster.ogg", t = 0.2}, -- Not Temporary
@@ -339,7 +339,7 @@ SWEP.Animations = {
     },
     ["holster_jam"] = {
         Source = "holster_jam",
-        Time = 22/30,
+        Time = 22 / 30,
         SoundTable = {
             {s = common .. "cloth_2.ogg", t = 0},
             {s = path .. "holster.ogg", t = 0.2}, -- Not Temporary
@@ -497,22 +497,22 @@ SWEP.Animations = {
 
     ["idle_jam"] = {
         Source = "idle_jam",
-        // time = 35 / 60,
+        -- time = 35 / 60,
         LHIK = true,
         LHIKIn = 0.3,
         LHIKOut = 0,
-       // SoundTable = {
-        // },
+       -- SoundTable = {
+        -- },
     },
 
     ["fire_jam"] = {
         Source = "fire_jam",
-        // time = 35 / 60,
+        -- time = 35 / 60,
         LHIK = true,
         LHIKIn = 0.3,
         LHIKOut = 0,
-       // SoundTable = {
-        // },
+       -- SoundTable = {
+        -- },
     },
 
 
@@ -606,7 +606,7 @@ SWEP.Animations = {
         LHIKIn = 0,
         LHIKOut = 0,
     },
-    ["exit_inspect_empty"] = {
+    ["exit_inspect_jam"] = {
         Source = "exit_inspect_jam",
         time = 66 / 60,
         LHIK = true,
@@ -625,7 +625,7 @@ SWEP.Animations = {
     },
 }
 
--- ADS animation blending, thanks fesiug -- 
+-- ADS animation blending, thanks fesiug --
 
 SWEP.Hook_Think = ArcCW.UC.ADSReload
 
@@ -672,7 +672,7 @@ SWEP.Attachments = {
         Slot = {"muzzle"},
         Bone = "vm_barrel",
         Offset = {
-            vpos = Vector(0, -3.6, .18),
+            vpos = Vector(0, -3.6, .275),
             vang = Angle(0, 90, 0),
         },
         ExcludeFlags = {"usp_match"},
