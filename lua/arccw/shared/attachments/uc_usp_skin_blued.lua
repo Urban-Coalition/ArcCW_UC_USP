@@ -3,7 +3,7 @@ att.AbbrevName = "Blued Steel"
 if !GetConVar("arccw_truenames"):GetBool() then
     att.PrintName = "P93 Blued Steel Finish"
 end
---att.Icon = Material("entities/att/acwatt_ur_deagle_finish_chrome.png","mips smooth")
+att.Icon = Material("entities/att/acwatt_uc_usp_skin_blued.png","mips smooth")
 att.Description = "Whether you enforce or engage the law of the land, you are a warrior of a bygone era.\n\n\"Alright, let's move out.\""
 att.Slot = "uc_usp_skin"
 att.Desc_Neutrals = {

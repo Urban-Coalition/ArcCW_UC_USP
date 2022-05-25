@@ -749,7 +749,7 @@ SWEP.Attachments = {
         PrintName = "Finish",
         Slot = {"uc_usp_skin"},
         DefaultAttName = "Black",
-        DefaultAttIcon = Material("entities/att/acwatt_ur_deagle_finish_default.png","mips smooth"),
+        DefaultAttIcon = Material("entities/att/acwatt_uc_usp_skin_default.png","mips smooth"),
         FreeSlot = true,
     },
 }

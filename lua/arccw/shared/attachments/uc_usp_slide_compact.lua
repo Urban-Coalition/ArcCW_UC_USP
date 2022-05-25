@@ -5,7 +5,7 @@ if GetConVar("arccw_truenames"):GetBool() then
     att.PrintName = "4\" USPCT Compact Slide"
 end
 
-att.Icon = Material("entities/att/acwatt_ud_glock_slide_subcompact.png", "smooth mips")
+att.Icon = Material("entities/att/acwatt_uc_usp_slide_compact.png", "smooth mips")
 att.Description = "A shortened slide reduces the amount of holster to clear and further improves agility to the detriment of long-range performance and recoil control."
 att.Desc_Pros = {
 }
