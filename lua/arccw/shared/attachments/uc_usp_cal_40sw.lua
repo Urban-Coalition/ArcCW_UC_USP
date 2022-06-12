@@ -44,7 +44,7 @@ end
 
 att.Hook_GetDistantShootSound = function(wep, distancesound)
     if distancesound == wep.DistantShootSoundSilenced then
-        return "weapons/arccw_uc/common/sup_tail.ogg"
+        return "arccw_uc/common/sup_tail.ogg"
     else
         return { "weapons/arccw_ud/glock/fire_dist_40.ogg" }
     end
