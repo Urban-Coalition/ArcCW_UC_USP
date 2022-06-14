@@ -52,3 +52,4 @@ att.Hook_GetDistantShootSound = function(wep, distancesound)
 end
 
 att.RequireFlags = {"usp_compact"}
+att.ExcludeFlags = {"usp_extended_mag"}
