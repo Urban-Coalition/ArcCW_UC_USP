@@ -26,3 +26,5 @@ att.Mult_ShootSpeedMult = 0.95
 att.Hook_SelectReloadAnimation = function(wep, anim)
     return anim .. "_ext"
 end
+
+att.GivesFlags = {"usp_extended_mag"}
