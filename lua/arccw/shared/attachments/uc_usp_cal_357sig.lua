@@ -7,7 +7,7 @@ end
 
 att.SortOrder = 8
 att.Icon = Material("entities/att/acwatt_uc_usp_bullets_357sig.png", "smooth mips")
-att.Description = "A law-enforcement caliber well-known for its accuracy. Only available for the USP Compact."
+att.Description = "A law-enforcement caliber well-known for its accuracy. Only available for the USP Compact and cannot take extended magazines."
 att.Desc_Pros = {
 }
 att.Desc_Cons = {
