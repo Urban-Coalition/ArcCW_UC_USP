@@ -36,6 +36,11 @@ att.Add_ClipSize = 3
 att.Override_ShellModel = "models/weapons/arccw/uc_shells/9x19.mdl"
 att.Override_ShellScale = 1
 
+att.Override_PhysTracerProfile = 0
+att.Override_PhysTracerProfile_Priority = -1
+att.Override_TracerNum = 1
+att.Override_TracerNum_Priority = -1
+
 att.Hook_GetShootSound = function(wep, sound) -- Temporary
     if wep:GetBuff_Override("Silencer") then
         return "weapons/arccw_ud/glock/fire_supp.ogg"

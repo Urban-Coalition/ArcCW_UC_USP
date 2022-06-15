@@ -73,6 +73,9 @@ SWEP.PhysBulletMuzzleVelocity = 315
 
 SWEP.BodyDamageMults = ArcCW.UC.BodyDamageMults
 
+SWEP.PhysTracerProfile = 7
+SWEP.TracerNum = 0
+
 -- Jamming --
 
 --SWEP.Malfunction = true
@@ -176,7 +179,7 @@ SWEP.CrouchAng = Angle(0, 0, -8)
 
 SWEP.MirrorVMWM = true
 SWEP.WorldModelOffset = {
-    pos        =    Vector(-9, 2.5, -5),
+    pos        =    Vector(-8.7, 2.5, -4.2),
     ang        =    Angle(-6, -6, 180),
     bone    =    "ValveBiped.Bip01_R_Hand",
 }
