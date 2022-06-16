@@ -41,11 +41,13 @@ att.Override_PhysTracerProfile_Priority = -1
 att.Override_TracerNum = 1
 att.Override_TracerNum_Priority = -1
 
+local path = ")^weapons/arccw_uc_usp/"
+
 att.Hook_GetShootSound = function(wep, sound) -- Temporary
     if wep:GetBuff_Override("Silencer") then
         return "weapons/arccw_ud/glock/fire_supp.ogg"
     else
-        return "weapons/arccw_ud/glock/fire.ogg"
+        return {path .. "fire-9-01.ogg", path .. "fire-9-02.ogg", path .. "fire-9-03.ogg", path .. "fire-9-04.ogg", path .. "fire-9-05.ogg", path .. "fire-9-06.ogg"}
     end
 end
 
@@ -53,5 +55,5 @@ att.Hook_GetDistantShootSound = function(wep, distancesound)
     if distancesound == wep.DistantShootSoundSilenced then
         return "arccw_uc/common/sup_tail.ogg"
     elseif distancesound == wep.DistantShootSound then
-        return "weapons/arccw_ud/glock/fire.ogg" end
+        return {path .. "fire-9-dist-01.ogg", path .. "fire-9-dist-02.ogg", path .. "fire-9-dist-03.ogg", path .. "fire-9-dist-04.ogg", path .. "fire-9-dist-05.ogg", path .. "fire-9-dist-06.ogg"} end
 end

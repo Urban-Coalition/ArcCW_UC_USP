@@ -205,7 +205,7 @@ SWEP.ShootSoundSilenced = {
     path .. "fire-sup-03.ogg",
     path .. "fire-sup-04.ogg",
     path .. "fire-sup-05.ogg",
-    path .. "fire-0sup-6.ogg"
+    path .. "fire-sup-6.ogg"
 }
 SWEP.DistantShootSound = nil
 SWEP.DistantShootSoundSilenced = common .. "sup_tail.ogg"
