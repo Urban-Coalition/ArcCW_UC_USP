@@ -7,7 +7,7 @@ end
 
 att.SortOrder = 8
 att.Icon = Material("entities/att/acwatt_uc_usp_bullets_357sig.png", "smooth mips")
-att.Description = "A law-enforcement caliber well-known for its accuracy. Only available for the USP Compact and cannot take extended magazines."
+att.Description = "A law-enforcement caliber well-known for its accuracy. Only available for the USP Compact as no full size pistols were ever manufactured by H&K."
 att.Desc_Pros = {
 }
 att.Desc_Cons = {
@@ -20,7 +20,7 @@ att.AutoStats = true
 
 att.Override_Trivia_Calibre = ".357 SIG"
 
-att.Mult_Damage = 30 / 45
+att.Mult_Damage = 0.73333333333
 att.Mult_AccuracyMOA = 0.5
 att.Mult_DamageMin = 20 / 15
 att.Mult_Penetration = 8 / 9
@@ -35,6 +35,7 @@ att.Mult_ClipSize = 0.83333333333 --10 round magazine
 att.Override_ShellModel = "models/weapons/arccw/uc_shells/357sig.mdl"
 att.Override_ShellScale = 1
 
+att.Override_PhysBulletMuzzleVelocity = 410
 att.Override_PhysTracerProfile = 0
 att.Override_PhysTracerProfile_Priority = -1
 att.Override_TracerNum = 1
