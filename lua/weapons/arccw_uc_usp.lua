@@ -374,7 +374,7 @@ SWEP.Animations = {
     },
     ["holster"] = {
         Source = "holster",
-        Time = 18 / 30,
+        Time = .75,
         SoundTable = {
             {s = common .. "cloth_2.ogg", t = 0},
             {s = path .. "holster.ogg", t = 0.2}, -- Not Temporary
@@ -382,7 +382,7 @@ SWEP.Animations = {
     },
     ["holster_empty"] = {
         Source = "holster_empty",
-        Time = 18 / 30,
+        Time = .75,
         SoundTable = {
             {s = common .. "cloth_2.ogg", t = 0},
             {s = path .. "holster.ogg", t = 0.2}, -- Not Temporary
@@ -417,6 +417,19 @@ SWEP.Animations = {
         SoundTable = {
             --{ s = {path .. "mech-01.ogg", path .. "mech-02.ogg", path .. "mech-03.ogg", path .. "mech-04.ogg", path .. "mech-05.ogg", path .. "mech-06.ogg"}, t = 0 }
         },
+    },
+
+    ["fire_stock"] = {
+        Source = "fire_stock",
+        Time = 30 / 30,
+        ShellEjectAt = 0,
+        SoundTable = {{ s = {path .. "mech-01.ogg", path .. "mech-02.ogg", path .. "mech-03.ogg", path .. "mech-04.ogg", path .. "mech-05.ogg", path .. "mech-06.ogg"}, t = 0 }},
+    },
+    ["fire_empty_stock"] = {
+        Source = "fire_empty_stock",
+        Time = 24 / 30,
+        ShellEjectAt = 0,
+        SoundTable = {{ s = path .. "mech_last.ogg", t = 0 }},
     },
 
     -- 12-R Reloads --
@@ -556,16 +569,6 @@ SWEP.Animations = {
         -- },
     },
 
-    ["fire_jam"] = {
-        Source = "fire_jam",
-        -- time = 35 / 60,
-        LHIK = true,
-        LHIKIn = 0.3,
-        LHIKOut = 0,
-       -- SoundTable = {
-        -- },
-    },
-
 
 
 
@@ -680,6 +683,11 @@ SWEP.Animations = {
 
 SWEP.Hook_Think = ArcCW.UC.ADSReload
 
+SWEP.Hook_TranslateAnimation = function(wep, anim)
+    if wep.Attachments[7].Installed and (anim == "fire" or anim == "fire_empty") then
+        return anim .. "_stock"
+    end
+end
 
 -- Attachments --
 
