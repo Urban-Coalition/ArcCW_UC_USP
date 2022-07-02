@@ -250,7 +250,17 @@ SWEP.AttachmentElements = {
         VMBodygroups = {
             {ind = 4,bg = 1},
         }
-        -- todo: pistol rail
+    },
+    ["uc_usp_sight"] = {
+        VMBodygroups = {
+            {ind = 4, bg = 2},
+            {ind = 5, bg = 1},
+        },
+	    Override_IronSightStruct = {
+            Pos = Vector(-2.31, 10, 1.39),
+            Ang = Angle(0.27, 0.07, 5.5),
+            Magnification = 1,
+        }
     },
     ["uc_usp_slide_compact"] = {
         VMBodygroups = {
@@ -698,7 +708,7 @@ SWEP.RejectAttachments = {
 SWEP.Attachments = {
     {
         PrintName = "Optic",
-        Slot = {"optic_lp"},
+        Slot = {"optic_lp", "uc_usp_sight"},
         DefaultAttName = "Iron Sights",
         Bone = "vm_charge",
         Offset = {

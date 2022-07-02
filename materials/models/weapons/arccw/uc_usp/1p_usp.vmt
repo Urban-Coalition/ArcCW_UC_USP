@@ -1,0 +1,12 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models\weapons\arccw\uc_usp\2USP_D"
+	"$bumpmap" "models\weapons\arccw\uc_usp\2USP_N"
+	"$phongexponenttexture" "models\weapons\arccw\uc_usp\2USP_M"
+	
+	"$envmap" "env_cubemap"
+	$envmaptint "[ 0.02 0.02 0.02 ]"
+	$color2 "[ 1 1 1 ]"
+	
+	"$nocull" "1"
+}

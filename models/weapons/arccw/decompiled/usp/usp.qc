@@ -22,7 +22,14 @@ $bodygroup "weight" {
 $bodygroup "sight" {
 	studio "sight_rear.smd"
 	studio "sight_mount.smd"
+	studio "REAR.smd"
 	blank
+}
+$bodygroup "sight" {
+	blank
+	studio "FRONT.smd"
+	studio "FRONT_SHORT.smd"
+	studio "FRONT_LONG.smd"
 }
 
 
