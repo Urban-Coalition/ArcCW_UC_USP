@@ -116,6 +116,28 @@ $sequence "fire_empty" {
 	{ event 5001 0 "1" }
 }
 
+$sequence "fire_match" {
+	"anims\vm_m1911_fire_match.smd"
+	"anims\vm_m1911_fire_ads_match.smd"
+	fps 30
+	"ACT_VM_PRIMARYATTACK" 1
+ 	blend "sights" 0 1
+	fadein 0.02
+	fadeout 0.0
+	{ event 5001 0 "1" }
+}
+
+$sequence "fire_empty_match" {
+	"anims\vm_m1911_fire_empty_match.smd"
+	// "anims\fire_iron_empty_match.smd"
+	fps 30
+	"ACT_VM_PRIMARYATTACK" 1
+ 	blend "sights" 0 1
+	fadein 0.02
+	fadeout 0.0
+	{ event 5001 0 "1" }
+}
+
 $sequence "fire_stock" {
 	"anims\vm_m1911_fire_stock.smd"
 	// "anims\vm_m1911_fire_ads.smd"

@@ -14,6 +14,10 @@ att.Desc_Cons = {
 att.AutoStats = true 
 att.SortOrder = 7
 
+att.Hook_SelectReloadAnimation = function(wep, anim)
+    return anim .. "_match"
+end
+
 att.Slot = "uc_usp_slide"
 
 att.Mult_Recoil = .7

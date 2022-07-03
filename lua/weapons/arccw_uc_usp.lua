@@ -442,6 +442,19 @@ SWEP.Animations = {
         SoundTable = {{ s = path .. "mech_last.ogg", t = 0 }},
     },
 
+    ["fire_match"] = {
+        Source = "fire_match",
+        Time = 30 / 30,
+        ShellEjectAt = 0,
+        SoundTable = {{ s = {path .. "mech-01.ogg", path .. "mech-02.ogg", path .. "mech-03.ogg", path .. "mech-04.ogg", path .. "mech-05.ogg", path .. "mech-06.ogg"}, t = 0 }},
+    },
+    ["fire_empty_match"] = {
+        Source = "fire_empty_match",
+        Time = 24 / 30,
+        ShellEjectAt = 0,
+        SoundTable = {{ s = path .. "mech_last.ogg", t = 0 }},
+    },
+
     -- 12-R Reloads --
 
     ["reload"] = {
