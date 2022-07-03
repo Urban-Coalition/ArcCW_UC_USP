@@ -14,7 +14,7 @@ att.Desc_Cons = {
 att.AutoStats = true 
 att.SortOrder = 7
 
-att.Hook_SelectReloadAnimation = function(wep, anim)
+att.Hook_SelectFireAnimation = function(wep, anim)
     return anim .. "_match"
 end
 
