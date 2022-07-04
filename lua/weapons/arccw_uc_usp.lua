@@ -256,7 +256,7 @@ SWEP.AttachmentElements = {
             {ind = 4, bg = 2},
             {ind = 5, bg = 1},
         },
-	    Override_IronSightStruct = {
+        Override_IronSightStruct = {
             Pos = Vector(-2.31, 10, 1.39),
             Ang = Angle(0.27, 0.07, 5.5),
             Magnification = 1,
@@ -748,7 +748,7 @@ SWEP.Attachments = {
             vpos = Vector(3.07, -3.8, -27),
             vang = Angle(90, 0, -90),
         },
-        DefaultFlags = {"cal_subsonic"},
+        -- DefaultFlags = {"cal_subsonic"},
     },
     {
         PrintName = "Muzzle",
@@ -802,7 +802,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Training Package",
-        Slot = {"uc_tp","uc_usp_tp"},
+        Slot = {"uc_tp", "uc_usp_tp"},
         DefaultAttName = "Basic Training"
     },
     {

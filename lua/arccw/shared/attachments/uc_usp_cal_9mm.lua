@@ -30,6 +30,7 @@ att.Mult_ReloadTime = .9
 att.Mult_Recoil = 0.8
 att.Mult_RecoilSide = 0.75
 
+att.Mult_PhysBulletMuzzleVelocity = 355 / 315
 
 --att.Mult_ClipSize = 15 / 12
 att.Add_ClipSize = 3
@@ -53,7 +54,7 @@ end
 
 att.Hook_GetDistantShootSoundOutdoors = function(wep, distancesound)
     if wep:GetBuff_Override("Silencer") then
-        -- fallback to script
+        return -- fallback to script
     else
         return {path .. "fire-9-dist-01.ogg", path .. "fire-9-dist-02.ogg", path .. "fire-9-dist-03.ogg", path .. "fire-9-dist-04.ogg", path .. "fire-9-dist-05.ogg", path .. "fire-9-dist-06.ogg"}
     end

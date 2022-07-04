@@ -28,7 +28,6 @@ att.Mult_RangeMin = 20 / 10
 att.Mult_Recoil = 0.85
 att.Mult_RecoilSide = 0.75
 
-
 --att.Mult_ClipSize = 13 / 12
 att.Add_ClipSize = 1
 att.Override_ShellModel = "models/weapons/arccw/uc_shells/9x19.mdl"
@@ -51,11 +50,11 @@ end
 
 att.Hook_GetDistantShootSoundOutdoors = function(wep, distancesound)
     if wep:GetBuff_Override("Silencer") then
-        -- fallback to script
+        return -- fallback to script
     else
         return {path .. "fire-40-dist-01.ogg", path .. "fire-40-dist-02.ogg", path .. "fire-40-dist-03.ogg", path .. "fire-40-dist-04.ogg", path .. "fire-40-dist-05.ogg", path .. "fire-40-dist-06.ogg"}
     end
 end
 
-att.GivesFlags = {"cal_subsonic"}
-att.ExcludeFlags = {"powder_subsonic"}
+-- att.GivesFlags = {"cal_subsonic"}
+-- att.ExcludeFlags = {"powder_subsonic"}
