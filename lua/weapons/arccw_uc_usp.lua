@@ -81,8 +81,8 @@ SWEP.TracerNum = 0
 --SWEP.Malfunction = true
 SWEP.MalfunctionJam = true
 --SWEP.MalfunctionMean = 21
-SWEP.MalfunctionPostFire = true
-SWEP.MalfunctionTakeRound = false
+SWEP.MalfunctionPostFire = false
+SWEP.MalfunctionTakeRound = true
 
 -- Mag size --
 
