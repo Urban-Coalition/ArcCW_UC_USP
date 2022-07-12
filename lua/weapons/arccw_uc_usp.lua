@@ -320,6 +320,20 @@ SWEP.AttachmentElements = {
     }
 }
 
+local altsight = {
+    uc_usp_slide_ext = 3,
+    uc_usp_slide_compact = 2,
+}
+
+SWEP.Hook_ModifyBodygroups = function(wep, data)
+    local vm = data.vm
+    if !IsValid(vm) then return end
+
+    if wep.Attachments[1].Installed == "uc_usp_sight" then
+        vm:SetBodygroup(5, altsight[wep.Attachments[2].Installed] or 1)
+    end
+end
+
 SWEP.Hook_NameChange = function(wep,name)
 
 end
