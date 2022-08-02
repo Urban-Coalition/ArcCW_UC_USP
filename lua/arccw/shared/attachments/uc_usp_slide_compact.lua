@@ -30,5 +30,3 @@ att.Mult_SightTime = 0.85
 att.Mult_AccuracyMOA = 1.5
 att.Mult_Range = 0.8
 att.Mult_Recoil = 1.2
-
-att.GivesFlags = {"usp_compact"}
