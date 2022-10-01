@@ -8,7 +8,6 @@
 	"$halflambert" 				"1"
 	"$phong" 					"1"
 	"$phongboost" 				"0.05"
-	"$phongexponent"			"1"
 	"$normalmapalphaphongmask"	"1"
 	"$phongfresnelranges" 		"[1 3 6]"
 
