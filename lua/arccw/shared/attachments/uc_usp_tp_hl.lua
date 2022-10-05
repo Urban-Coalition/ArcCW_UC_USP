@@ -27,3 +27,5 @@ end
 
 att.Free = true 
 att.IgnorePickX = true
+
+att.Ignore = true

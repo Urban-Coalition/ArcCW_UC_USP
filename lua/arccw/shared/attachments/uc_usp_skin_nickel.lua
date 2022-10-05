@@ -13,3 +13,5 @@ att.SortOrder = 2
 
 att.IgnorePickX = true
 att.Free = true
+
+att.GivesFlags = {"usp_freeman_1"}

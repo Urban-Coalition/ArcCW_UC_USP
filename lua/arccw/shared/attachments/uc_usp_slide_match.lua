@@ -25,4 +25,4 @@ att.Mult_Recoil = .7
 att.Mult_SightTime = 1.4
 att.Add_BarrelLength = 4
 
-att.GivesFlags = {"usp_match"}
+att.GivesFlags = {"usp_match","usp_freeman_2"}

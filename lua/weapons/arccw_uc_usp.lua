@@ -322,7 +322,14 @@ SWEP.AttachmentElements = {
         VMBodygroups = {
             --{ind = 1,bg = 3},
         },
-    }
+    },
+
+    -- HL2 easter egg
+    ["uc_tp_gong"] = {
+        Override_ActivePos = Vector(1.5, 2, .75),
+        Override_ActiveAng = Angle(-2, -5, 0),
+        RequireFlags = {"usp_freeman_1","usp_freeman_2"}, -- Dress for the job you're looking for
+    },
 }
 
 local altsight = {
