@@ -82,7 +82,7 @@ SWEP.TracerNum = 0
 SWEP.MalfunctionJam = true
 --SWEP.MalfunctionMean = 21
 SWEP.MalfunctionPostFire = false
-SWEP.MalfunctionTakeRound = true
+SWEP.MalfunctionTakeRound = false
 
 -- Mag size --
 
@@ -163,7 +163,7 @@ SWEP.HoldtypeSights = "revolver"
 
 SWEP.IronSightStruct = {
      Pos = Vector(-2.29, 10, 1.5),
-     Ang = Angle(0.27, 0.07, 5.5),
+     Ang = Angle(0.15, 0.07, 5.5),
      Magnification = 1,
      SwitchToSound = "",
 }
@@ -262,8 +262,8 @@ SWEP.AttachmentElements = {
             {ind = 5, bg = 1},
         },
         Override_IronSightStruct = {
-            Pos = Vector(-2.31, 10, 1.39),
-            Ang = Angle(0.27, 0.07, 5.5),
+            Pos = Vector(-2.29, 10, 1.4),
+            Ang = Angle(0.2, 0.05, 5.5),
             Magnification = 1,
         }
     },
@@ -630,6 +630,7 @@ SWEP.Animations = {
         LHIKIn = 0.3,
         LHIKOut = 0,
         SoundTable = {
+            {s = rottle, t = 0},
         },
     },
     ["idle_inspect"] = {
@@ -646,17 +647,10 @@ SWEP.Animations = {
         LHIKIn = 0,
         LHIKEaseOut = 0.3,
         LHIKOut = 0.84,
-        -- SoundTable = {
-        --     { s = rottle, t = 0 / 60, c = ca },
-        --     { s = common .. "magrelease.ogg", t = 7 / 60, c = ca },
-        --     { s = path .. "magout1.ogg", t = 8 / 60, c = ca },
-        --     { s = rottle, t = 100 / 60, c = ca },
-        --     { s = path .. "magin_miss.ogg", t = 106 / 60, c = ca },
-        --     { s = path .. "magin1.ogg", t = 114 / 60, c = ca },
-        --     { s = path .. "rack1.ogg", t = 155 / 60, c = ca },
-        --     { s = rottle, t = 160 / 60, c = ca },
-        --     { s = path .. "rack2.ogg", t = 178 / 60, c = ca },
-        -- },
+        SoundTable = {
+            {s = rottle, t = 0.05},
+            {s = rottle, t = 1},
+        },
     },
 
     ["enter_inspect_empty"] = {
@@ -666,6 +660,7 @@ SWEP.Animations = {
         LHIKIn = 0.1,
         LHIKOut = 0,
         SoundTable = {
+            {s = rottle, t = 0},
         },
     },
     ["idle_inspect_empty"] = {
@@ -682,15 +677,10 @@ SWEP.Animations = {
         LHIKIn = 0,
         LHIKEaseOut = 0.3,
         LHIKOut = 0.84,
-        -- SoundTable = {
-        --     { s = rottle, t = 0 / 60, c = ca },
-        --     { s = common .. "magrelease.ogg", t = 7 / 60, c = ca },
-        --     { s = path .. "magout1.ogg", t = 8 / 60, c = ca },
-        --     { s = rottle, t = 100 / 60, c = ca },
-        --     { s = path .. "magin_miss.ogg", t = 106 / 60, c = ca },
-        --     { s = path .. "magin1.ogg", t = 114 / 60, c = ca },
-        --     { s = rottle, t = 160 / 60, c = ca },
-        -- },
+        SoundTable = {
+            {s = rottle, t = 0.05},
+            {s = rottle, t = 1},
+        },
     },
 
     ["enter_inspect_jam"] = {
@@ -700,6 +690,7 @@ SWEP.Animations = {
         LHIKIn = 0.1,
         LHIKOut = 0,
         SoundTable = {
+            {s = rottle, t = 0},
         },
     },
     ["idle_inspect_jam"] = {
@@ -716,15 +707,10 @@ SWEP.Animations = {
         LHIKIn = 0,
         LHIKEaseOut = 0.3,
         LHIKOut = 0.84,
-        -- SoundTable = {
-        --     { s = rottle, t = 0 / 60, c = ca },
-        --     { s = common .. "magrelease.ogg", t = 7 / 60, c = ca },
-        --     { s = path .. "magout1.ogg", t = 8 / 60, c = ca },
-        --     { s = rottle, t = 100 / 60, c = ca },
-        --     { s = path .. "magin_miss.ogg", t = 106 / 60, c = ca },
-        --     { s = path .. "magin1.ogg", t = 114 / 60, c = ca },
-        --     { s = rottle, t = 160 / 60, c = ca },
-        -- },
+        SoundTable = {
+            {s = rottle, t = 0.05},
+            {s = rottle, t = 1},
+        },
     },
 }
 
