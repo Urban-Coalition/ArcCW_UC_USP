@@ -6,7 +6,7 @@ if !GetConVar("arccw_truenames"):GetBool() then
 end
 
 att.SortOrder = 8
-att.Icon = Material("entities/att/acwatt_uc_cal_40s&w.png", "smooth mips")
+att.Icon = Material("entities/att/uc_bullets/40sw.png", "smooth mips")
 att.Description = "Stubby caliber which the USP was designed around. Retains damage over distance better than other calibers."
 att.Desc_Pros = {
 }
