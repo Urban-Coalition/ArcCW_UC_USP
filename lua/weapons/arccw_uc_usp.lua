@@ -683,7 +683,7 @@ SWEP.Animations = {
         },
     },
 
-    ["enter_inspect_jam"] = {
+    ["enter_inspect_jammed"] = {
         Source = "enter_inspect_jam",
         time = 35 / 60,
         LHIK = true,
@@ -693,14 +693,14 @@ SWEP.Animations = {
             {s = rottle, t = 0},
         },
     },
-    ["idle_inspect_jam"] = {
+    ["idle_inspect_jammed"] = {
         Source = "idle_inspect_jam",
         time = 72 / 60,
         LHIK = true,
         LHIKIn = 0,
         LHIKOut = 0,
     },
-    ["exit_inspect_jam"] = {
+    ["exit_inspect_jammed"] = {
         Source = "exit_inspect_jam",
         time = 66 / 60,
         LHIK = true,
