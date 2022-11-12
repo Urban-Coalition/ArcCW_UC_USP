@@ -269,13 +269,13 @@ SWEP.AttachmentElements = {
     },
     ["uc_usp_slide_compact"] = {
         VMBodygroups = {
-            {ind = 0,bg = 1},
-            {ind = 1,bg = 1},
+            {ind = 0, bg = 1},
+            {ind = 1, bg = 1},
         },
         AttPosMods = {
             [4] = {
-                vpos = Vector(0, -2.9, .18),
-                vang = Angle(0, 90, 0),
+                vpos = Vector(0, -1.46, 4.1),
+                vang = Angle(90, 0, -90),
             }
         },
         NameChange = "CP93",
@@ -287,8 +287,8 @@ SWEP.AttachmentElements = {
         },
         AttPosMods = {
             [4] = {
-                vpos = Vector(0, -4.26, .18),
-                vang = Angle(0, 90, 0),
+                vpos = Vector(0, -1.46, 5.4),
+                vang = Angle(90, 0, -90),
             }
         },
         NameChange = "LP93",
@@ -766,10 +766,11 @@ SWEP.Attachments = {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
         Slot = {"muzzle"},
-        Bone = "vm_barrel",
+        Bone = "vm_pivot",
+        -- WMBone = "vm_pivot",
         Offset = {
-            vpos = Vector(0, -3.6, .275),
-            vang = Angle(0, 90, 0),
+            vpos = Vector(0, -1.46, 4.7),
+            vang = Angle(90, 0, -90),
         },
         ExcludeFlags = {"usp_match"},
         VMScale = Vector(.8, .8, .8)
