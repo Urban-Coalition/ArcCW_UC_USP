@@ -38,6 +38,7 @@ $cdmaterials "models\weapons\arccw\uc_usp"
 $cdmaterials "models\weapons\arccw\ud_common"
 
 
+$collisionmodel "frame.smd"
 $texturegroup "skinfamilies"
 {
     { "usp_diffuse"        }
