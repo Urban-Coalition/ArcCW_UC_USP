@@ -228,7 +228,16 @@ SWEP.DistantShootSoundIndoors = {
     common .. "fire-dist-int-pistol-06.ogg"
 }
 SWEP.DistantShootSoundOutdoorsSilenced = {
-    common .. "sup_tail.ogg" -- i know .45ACP is subsonic i'll make atts change this when i'm not feeling lazy
+    common .. "sup-tail-01.ogg",
+    common .. "sup-tail-02.ogg",
+    common .. "sup-tail-03.ogg",
+    common .. "sup-tail-04.ogg",
+    common .. "sup-tail-05.ogg",
+    common .. "sup-tail-06.ogg",
+    common .. "sup-tail-07.ogg",
+    common .. "sup-tail-08.ogg",
+    common .. "sup-tail-09.ogg",
+    common .. "sup-tail-10.ogg"
 }
 SWEP.DistantShootSoundIndoorsSilenced = {
     common .. "fire-dist-int-pistol-light-01.ogg",
