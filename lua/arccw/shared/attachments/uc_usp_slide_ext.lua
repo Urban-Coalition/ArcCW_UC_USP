@@ -3,6 +3,7 @@ att.AbbrevName = "6\" Long Slide"
 
 if GetConVar("arccw_truenames"):GetBool() then
     att.PrintName = "6\" USP Elite Slide"
+    att.AbbrevName = "6\" Elite Slide"
 end
 
 att.Icon = Material("entities/att/acwatt_uc_usp_slide_long.png", "smooth mips")

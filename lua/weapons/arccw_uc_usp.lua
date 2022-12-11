@@ -824,7 +824,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Training Package",
-        Slot = {"uc_tp", "uc_usp_tp"},
+        Slot = {"uc_tp"},
         DefaultAttName = "Basic Training"
     },
     {
@@ -834,7 +834,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Charm",
-        Slot = {"charm","fml_charm"},
+        Slot = {"charm", "fml_charm", "uc_usp_tp"},
         FreeSlot = true,
         Bone = "vm_charge",
         Offset = {

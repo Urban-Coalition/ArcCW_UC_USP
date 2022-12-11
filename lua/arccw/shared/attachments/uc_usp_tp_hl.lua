@@ -21,11 +21,7 @@ att.LHIKHide = true
 att.Override_ActivePos = Vector(1.5, 2, .75)
 att.Override_ActiveAng = Angle(-2, -5, 0)
 
-att.Hook_Compatible = function(wep, data)
-    if wep:GetIsManualAction() and wep:GetBuff("HoldtypeActive") ~= "pistol" and wep:GetBuff("HoldtypeActive") ~= "revolver" then return false end
-end
-
-att.Free = true 
+att.Free = true
 att.IgnorePickX = true
 
-att.Ignore = true
+att.Ignore = false
