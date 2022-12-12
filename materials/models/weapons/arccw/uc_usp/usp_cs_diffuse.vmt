@@ -11,19 +11,19 @@
 	"$phong"     "1"
 	"$phongboost"   "8"
 	"$phongfresnelranges"      "[1 3 6]"
-//	"$phongtint"                   "[0.2 0.2 0.2]" 
+//	"$phongtint"                   "[0.2 0.2 0.2]"
 	"$phongexponenttexture" 	"models\weapons\arccw\uc_usp\usp_exponent"
 	"$phongalbedotint"		"1"
 	"$phongalbedoboost" 	"14"
 	"$halflambert" 		"1"
 
 	"$rimlight" 	"1"
-	"$rimlightexponent" 	"66"	
+	"$rimlightexponent" 	"66"
 	"$rimlightboost"	"0.6"
 	"$rimmask" 	"1"
 
 	$color2 "[1 1 1]"
-	
+
 	"$detail"                   "models\weapons\arccw\uc_usp\usp_glow"
 	"$detailframe"              "1"
 	"$detailblendmode"          "5"
