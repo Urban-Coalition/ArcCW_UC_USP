@@ -642,6 +642,7 @@ SWEP.Animations = {
         LHIKOut = 0,
         SoundTable = {
             {s = rottle, t = 0},
+            {s = common .. "movement-pistol-04.ogg", t = 0},
         },
     },
     ["idle_inspect"] = {
@@ -660,6 +661,8 @@ SWEP.Animations = {
         LHIKOut = 0.84,
         SoundTable = {
             {s = rottle, t = 0.05},
+            {s = common .. "movement-pistol-03.ogg", t = 0.1},
+            {s = common .. "movement-pistol-01.ogg", t = 1},
             {s = rottle, t = 1},
         },
     },
@@ -672,6 +675,7 @@ SWEP.Animations = {
         LHIKOut = 0,
         SoundTable = {
             {s = rottle, t = 0},
+            {s = common .. "movement-pistol-04.ogg", t = 0},
         },
     },
     ["idle_inspect_empty"] = {
@@ -690,10 +694,11 @@ SWEP.Animations = {
         LHIKOut = 0.84,
         SoundTable = {
             {s = rottle, t = 0.05},
+            {s = common .. "movement-pistol-03.ogg", t = 0.1},
+            {s = common .. "movement-pistol-01.ogg", t = 1},
             {s = rottle, t = 1},
         },
     },
-
     ["enter_inspect_jammed"] = {
         Source = "enter_inspect_jam",
         time = 35 / 60,
@@ -702,6 +707,7 @@ SWEP.Animations = {
         LHIKOut = 0,
         SoundTable = {
             {s = rottle, t = 0},
+            {s = common .. "movement-pistol-04.ogg", t = 0},
         },
     },
     ["idle_inspect_jammed"] = {
@@ -720,6 +726,8 @@ SWEP.Animations = {
         LHIKOut = 0.84,
         SoundTable = {
             {s = rottle, t = 0.05},
+            {s = common .. "movement-pistol-03.ogg", t = 0.1},
+            {s = common .. "movement-pistol-01.ogg", t = 1},
             {s = rottle, t = 1},
         },
     },
