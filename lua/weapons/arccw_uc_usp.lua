@@ -141,7 +141,7 @@ SWEP.MagID = "m1911"
 
 SWEP.SpeedMult = 0.965
 SWEP.SightedSpeedMult = 0.875
-SWEP.SightTime = 0.35
+SWEP.SightTime = 0.25
 SWEP.ShootSpeedMult = 1
 
 -- Length --
