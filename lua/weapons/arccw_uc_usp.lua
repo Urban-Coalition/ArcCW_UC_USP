@@ -283,7 +283,7 @@ SWEP.AttachmentElements = {
         },
         AttPosMods = {
             [4] = {
-                vpos = Vector(0, -1.46, 4.1),
+                vpos = Vector(0, -1.46, 4),
                 vang = Angle(90, 0, -90),
             }
         },
@@ -296,7 +296,7 @@ SWEP.AttachmentElements = {
         },
         AttPosMods = {
             [4] = {
-                vpos = Vector(0, -1.46, 5.4),
+                vpos = Vector(0, -1.46, 5.25),
                 vang = Angle(90, 0, -90),
             }
         },
@@ -786,9 +786,8 @@ SWEP.Attachments = {
         DefaultAttName = "Standard Muzzle",
         Slot = {"muzzle"},
         Bone = "vm_pivot",
-        -- WMBone = "vm_pivot",
         Offset = {
-            vpos = Vector(0, -1.46, 4.85),
+            vpos = Vector(0, -1.46, 4.6),
             vang = Angle(90, 0, -90),
         },
         ExcludeFlags = {"usp_match"},
