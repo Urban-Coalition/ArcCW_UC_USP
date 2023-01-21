@@ -788,11 +788,10 @@ SWEP.Attachments = {
         Bone = "vm_pivot",
         -- WMBone = "vm_pivot",
         Offset = {
-            vpos = Vector(0, -1.46, 4.7),
+            vpos = Vector(0, -1.46, 4.85),
             vang = Angle(90, 0, -90),
         },
         ExcludeFlags = {"usp_match"},
-        VMScale = Vector(.8, .8, .8)
     },
     {
         PrintName = "Tactical",
