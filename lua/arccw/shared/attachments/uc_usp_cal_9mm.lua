@@ -42,7 +42,7 @@ att.Override_PhysTracerProfile_Priority = -1
 att.Override_TracerNum = 1
 att.Override_TracerNum_Priority = -1
 
-local path = ")^weapons/arccw_uc_usp/"
+local path = ")weapons/arccw_uc_usp/"
 
 att.Hook_GetShootSound = function(wep, sound) -- Temporary
     if wep:GetBuff_Override("Silencer") then
@@ -52,7 +52,7 @@ att.Hook_GetShootSound = function(wep, sound) -- Temporary
     end
 end
 
-local tail = ")^/arccw_uc/common/9x19/"
+local tail = ")/arccw_uc/common/9x19/"
 
 att.Hook_GetDistantShootSoundOutdoors = function(wep, distancesound)
     if wep:GetBuff_Override("Silencer") then
