@@ -28,6 +28,8 @@ att.Mult_RangeMin = 20 / 10
 att.Mult_Recoil = 0.85
 att.Mult_RecoilSide = 0.75
 
+att.Mult_PhysBulletMuzzleVelocity = 340 / 315
+
 --att.Mult_ClipSize = 13 / 12
 att.Add_ClipSize = 1
 att.Override_ShellModel = "models/weapons/arccw/uc_shells/9x19.mdl"
