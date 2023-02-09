@@ -336,13 +336,14 @@ SWEP.AttachmentElements = {
     },
 
     -- HL2 easter egg
-    --[[]
+    
     ["uc_tp_gong"] = {
-        Override_ActivePos = Vector(1.5, 2, .75),
-        Override_ActiveAng = Angle(-2, -5, 0),
+        Override_ActivePos = Vector(1, 5, .75),
+        Override_ActiveAng = Angle(-2, -2, 0),
         RequireFlags = {"usp_freeman_1","usp_freeman_2"}, -- Dress for the job you're looking for
+        --NameChange = "9MM PISTOL"
     },
-    ]]
+    
 }
 
 local altsight = {

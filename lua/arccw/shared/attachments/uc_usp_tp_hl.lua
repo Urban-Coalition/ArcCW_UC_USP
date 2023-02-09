@@ -26,4 +26,4 @@ att.HideIfBlocked = true
 att.Free = true
 att.IgnorePickX = true
 
-att.Ignore = false
+att.Ignore = true
