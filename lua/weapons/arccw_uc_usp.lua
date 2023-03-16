@@ -360,11 +360,9 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     end
 end
 
-SWEP.Hook_NameChange = function(wep,name)
-
-end
-
 -- Animations --
+
+local mech = {path .. "mech-01.ogg", path .. "mech-02.ogg", path .. "mech-03.ogg", path .. "mech-04.ogg", path .. "mech-05.ogg", path .. "mech-06.ogg"}
 
 SWEP.Animations = {
     ["idle_empty"] = {
@@ -451,7 +449,9 @@ SWEP.Animations = {
         Source = "fire",
         Time = 30 / 30,
         ShellEjectAt = 0,
-        SoundTable = {{ s = {path .. "mech-01.ogg", path .. "mech-02.ogg", path .. "mech-03.ogg", path .. "mech-04.ogg", path .. "mech-05.ogg", path .. "mech-06.ogg"}, t = 0, v = 0.25 }},
+        SoundTable = {
+            { s = mech, t = 0, v = 0.25 }
+        },
     },
     ["fire_iron"] = {
         Source = "fire",
@@ -459,7 +459,7 @@ SWEP.Animations = {
         ShellEjectAt = 0,
         SoundTable = {
             {s = common .. "common_mech_light.ogg", t = 0},
-            { s = {path .. "mech-01.ogg", path .. "mech-02.ogg", path .. "mech-03.ogg", path .. "mech-04.ogg", path .. "mech-05.ogg", path .. "mech-06.ogg"}, t = 0 }
+            { s = mech, t = 0 }
         },
     },
     ["fire_empty"] = {
