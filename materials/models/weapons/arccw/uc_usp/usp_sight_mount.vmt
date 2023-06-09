@@ -1,32 +1,38 @@
-// Valve Material Setup 2014. Brought you by Studio Apocalyptic.
-// Written by Yogensia and Rafael De Jongh
-// More information: http://source.gamebanana.com/tuts/11498
-// Parameter Cheat Sheet: http://bit.ly/1ibGMCe (Google Drive Spreadsheet)
-
-"Vertexlitgeneric"
+//if you don't know what a parameter does, visit:
+//https://developer.valvesoftware.com/wiki/$phong
+"VertexLitGeneric"
 {
-   	// MAIN SETTINGS
-   	"$basetexture"                  "models\weapons\arccw\uc_usp\usp_sight_mount"
-    	"$bumpmap"                      "models\weapons\arccw\uc_usp\usp_sight_mount_n"
-    	$nocull               1
+    "$basetexture" "models\weapons\arccw\uc_usp\mount_rgb"
+    "$bumpmap" "models\weapons\arccw\uc_usp\mount_n"
+    "$phongexponenttexture" "models\weapons\arccw\uc_usp\mount_e"
 
-    	// PHONG SHADING
-    	$phong                          1
-	$phongboost                 1.5
-	$phongfresnelranges         "[1 3 6]"
-    	$phongtint                  "[0.8 0.8 1]"
-    	"$phongexponenttexture"         "models\weapons\arccw\uc_usp\usp_sight_mount_r"
-    	$normalmapalphaphongmask    1
+    "$color2" "[0 0 0]"
+    "$blendtintbybasealpha" "1"
 
-    	// ENVIRONMENT REFLECTION
-	$envmap                     env_cubemap
-	$envmaptint                 "[.03 .03 .03]"
-	$envmapfresnel              1
-	$normalmapalphaenvmapmask   1
+    "$phong" "1"
+    "$phongboost" "1"
+    "$phongfresnelranges" "[1 0.5 0]"
+    "$phongalbedotint" "0"
 
-    	// RIM LIGHT
-    	$rimlight                           1
-   	$rimlightexponent               28
-    	$rimlightboost                  0.8
-    	$rimmask                        1
+    //rimlight doesn't properly show in hlmv, make sure you're changing these values in game
+    "$rimlight" "1"
+    "$rimlightexponent" "100"
+    "$rimmask" "1"
+    "$rimlightboost" "1"
+
+    "$normalmapalphaenvmapmask" "1"
+    "$envmapfresnel" "1"
+    "$envmap" "env_cubemap"
+    "$envmaptint" "[0.2 0.2 0.2]"
+
+    //remove this if viewing outside of MWB
+    "Proxies"
+    {
+        "MwEnvMapTint"
+        {
+            "specularity" "0.5"             //0.25, 0.5, 0.75, 1
+            "min" "0"
+            "max" "0.2"                       //change this if too bright in game
+        }
+    }
 }

@@ -1,19 +1,40 @@
+//if you don't know what a parameter does, visit:
+//https://developer.valvesoftware.com/wiki/$phong
 "VertexLitGeneric"
 {
-	"$basetexture" 				"models\weapons\arccw\uc_usp\usp_mag_ext"
-	"$bumpmap" 					"models\weapons\arccw\uc_usp\usp_mag_ext_n"
-	"$phongexponenttexture" 	"models\weapons\arccw\uc_usp\usp_mag_ext_r"
-	"$selfillum"				 "1"
-	"$nocull" 				"1"
-	"$halflambert" 				"1"
-	"$phong" 					"1"
-	"$phongboost" 				"0.05"
-	"$normalmapalphaphongmask"	"1"
-	"$phongfresnelranges" 		"[1 3 6]"
+    "$basetexture" "models\weapons\arccw\uc_usp\mag_ext_rgb"
+    "$bumpmap" "models\weapons\arccw\uc_usp\mag_ext_n"
+    "$phongexponenttexture" "models\weapons\arccw\uc_usp\mag_ext_e"
 
-	
-	"$rimlight" 				"1"
-	"$rimlightexponent" 		"25"	
-	"$rimlightboost"			"0.8"
-	"$rimmask" 					"1"
+    "$color2" "[0 0 0]"
+    "$blendtintbybasealpha" "1"
+
+    "$phong" "1"
+    "$phongboost" "1"
+    "$phongfresnelranges" "[1 0.5 0]"
+    "$phongalbedotint" "0"
+
+    //rimlight doesn't properly show in hlmv, make sure you're changing these values in game
+    "$rimlight" "1"
+    "$rimlightexponent" "100"
+    "$rimmask" "1"
+    "$rimlightboost" "1"
+
+    "$normalmapalphaenvmapmask" "1"
+    "$envmapfresnel" "1"
+    "$envmap" "env_cubemap"
+    "$envmaptint" "[0.2 0.2 0.2]"
+
+
+
+    //remove this if viewing outside of MWB
+    "Proxies"
+    {
+        "MwEnvMapTint"
+        {
+            "specularity" "0.5"             //0.25, 0.5, 0.75, 1
+            "min" "0"
+            "max" "0.1"                       //change this if too bright in game
+        }
+    }
 }
