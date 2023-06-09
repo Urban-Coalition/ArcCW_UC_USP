@@ -1,31 +1,43 @@
-"VertexlitGeneric"
+//if you don't know what a parameter does, visit:
+//https://developer.valvesoftware.com/wiki/$phong
+"VertexLitGeneric"
 {
-	"$basetexture" "models\weapons\arccw\uc_usp\usp_cs_diffuse"
-	"$bumpmap" "models\weapons\arccw\uc_usp\usp_normal"
-	"$normalmapalphaenvmapmask" "1"
-	"$normalmapalphaphongmask"    "1"
-	"$envmap" "env_cubemap"
-	"$envmaptint" "[ 0.04 0.04 0.04 ]"
-	"$nocull" "1"
+    "$basetexture" "models\weapons\arccw\uc_usp\usp_rgb"
+    "$bumpmap" "models\weapons\arccw\uc_usp\usp_n"
+    "$phongexponenttexture" "models\weapons\arccw\uc_usp\usp_e"
 
-	"$phong"     "1"
-	"$phongboost"   "8"
-	"$phongfresnelranges"      "[1 3 6]"
-//	"$phongtint"                   "[0.2 0.2 0.2]"
-	"$phongexponenttexture" 	"models\weapons\arccw\uc_usp\usp_exponent"
-	"$phongalbedotint"		"1"
-	"$phongalbedoboost" 	"14"
-	"$halflambert" 		"1"
+    "$color2" "[.0 .2 .8]"
+    "$blendtintbybasealpha" "1"
 
-	"$rimlight" 	"1"
-	"$rimlightexponent" 	"66"
-	"$rimlightboost"	"0.6"
-	"$rimmask" 	"1"
+    "$phong" "1"
+    "$phongboost" "1.2"
+    "$phongfresnelranges" "[1 0.5 0]"
+    "$phongalbedotint" "0"
 
-	$color2 "[1 1 1]"
+    //rimlight doesn't properly show in hlmv, make sure you're changing these values in game
+    "$rimlight" "1"
+    "$rimlightexponent" "100"
+    "$rimmask" "1"
+    "$rimlightboost" "1"
+
+    "$normalmapalphaenvmapmask" "1"
+    "$envmapfresnel" "1"
+    "$envmap" "env_cubemap"
+    "$envmaptint" "[0.2 0.2 0.2]"
 
 	"$detail"                   "models\weapons\arccw\uc_usp\usp_glow"
 	"$detailframe"              "1"
 	"$detailblendmode"          "5"
 	"$detailscale"              "1"
+
+    //remove this if viewing outside of MWB
+    "Proxies"
+    {
+        "MwEnvMapTint"
+        {
+            "specularity" "0.5"             //0.25, 0.5, 0.75, 1
+            "min" "0"
+            "max" ".2"                       //change this if too bright in game
+        }
+    }
 }
