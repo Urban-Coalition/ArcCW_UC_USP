@@ -6,7 +6,7 @@
     "$bumpmap" "models\weapons\arccw\uc_usp\usp_n"
     "$phongexponenttexture" "models\weapons\arccw\uc_usp\usp_e"
 
-    "$color2" "[.0 .2 .8]"
+    "$color2" "[1.35 1.15 2.5]"
     "$blendtintbybasealpha" "1"
 
     "$phong" "1"
