@@ -267,17 +267,17 @@ SWEP.AttachmentElements = {
             {ind = 4,bg = 1},
         }
     },
-    ["uc_usp_sight"] = {
-        VMBodygroups = {
-            {ind = 4, bg = 2},
-            {ind = 5, bg = 1},
-        },
-        Override_IronSightStruct = {
-            Pos = Vector(-2.29, 10, 1.4),
-            Ang = Angle(0.2, 0.05, 5.5),
-            Magnification = 1,
-        }
-    },
+    -- ["uc_usp_sight"] = {
+    --     VMBodygroups = {
+    --         {ind = 4, bg = 2},
+    --         {ind = 5, bg = 1},
+    --     },
+    --     Override_IronSightStruct = {
+    --         Pos = Vector(-2.29, 10, 1.4),
+    --         Ang = Angle(0.2, 0.05, 5.5),
+    --         Magnification = 1,
+    --     }
+    -- },
     ["uc_usp_slide_compact"] = {
         VMBodygroups = {
             {ind = 0, bg = 1},
@@ -346,17 +346,30 @@ SWEP.AttachmentElements = {
     
 }
 
-local altsight = {
-    uc_usp_slide_ext = 3,
+local ind_default = {
+    uc_usp_slide_ext = 1,
     uc_usp_slide_compact = 2,
+}
+local ind_mount = {
+    uc_usp_slide_ext = 4,
+    uc_usp_slide_compact = 5,
+}
+local ind_altsight = {
+    uc_usp_slide_ext = 7,
+    uc_usp_slide_compact = 8,
 }
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local vm = data.vm
     if !IsValid(vm) then return end
 
-    if wep.Attachments[1].Installed == "uc_usp_sight" then
-        vm:SetBodygroup(5, altsight[wep.Attachments[2].Installed] or 1)
+    local optic = wep.Attachments[1].Installed
+    if optic == "uc_usp_sight" then
+        vm:SetBodygroup(4, ind_altsight[wep.Attachments[2].Installed] or 6)
+    elseif optic then
+        vm:SetBodygroup(4, ind_mount[wep.Attachments[2].Installed] or 3)
+    else
+        vm:SetBodygroup(4, ind_default[wep.Attachments[2].Installed] or 0)
     end
 end
 
@@ -789,12 +802,12 @@ SWEP.Attachments = {
         DefaultAttName = "Iron Sights",
         Bone = "vm_charge",
         Offset = {
-            vpos = Vector(-0.01, -.6, -.3),
+            vpos = Vector(0, -.7, -.5),
             vang = Angle(90, 0, -90),
         },
         VMScale = Vector(.8,.8,.8),
         WMScale = VMScale,
-        InstalledEles = {"pistol_rail"},
+        -- InstalledEles = {"pistol_rail"},
     },
     {
         PrintName = "Slide",
